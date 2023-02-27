@@ -5,7 +5,7 @@ import imgProfile from "../assets/profile.jpg";
 
 function About() {
   return (
-    <div className="w-auto h-screen flex flex-col justify-between overflow-y-auto">
+    <div className="w-auto h-screen flex flex-col justify-between overflow-y-hidden">
       <Navbar />
       <div className="flex justify-between items-center">
         <div className="flex flex-col pl-20 gap-4">
@@ -28,11 +28,11 @@ function About() {
           </div>
         </div>
         <div>
-          <img src={imgProfile} alt="" className=" " />
+          <img src={imgProfile} alt="" className="grayscale" />
         </div>
       </div>
       {/* Icons */}
-      <footer className="flex text-lg text-center text-gray-500 pl-32 pb-8">
+      <footer className="flex text-lg text-center text-gray-500 pl-32 pb-12">
         <h3>
           <b className="text-white">Facundo Guardia</b>
           <hr /> Mendoza - Argentina{" "}

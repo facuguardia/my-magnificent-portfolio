@@ -19,6 +19,8 @@ import {
   SiTailwindcss,
   SiSass,
   SiReactrouter,
+  SiGooglechrome,
+  SiGithub,
 } from "react-icons/si";
 
 function Portfolio() {
@@ -26,44 +28,49 @@ function Portfolio() {
     <div className="w-full h-screen overflow-y-auto">
       <Navbar />
       <section>
-        <div className="">
-          <div className="flex flex-col text-center">
-            <h1 className="text-4xl font-medium text-white uppercase underline underline-offset-8 decoration-green-500 pt-4 pb-10">
-              Portfolio
-            </h1>
-          </div>
+        <div className="pt-5 pb-5">
           <div className="flex flex-wrap">
             {/* Card 1 */}
             <div className="lg:w-1/3 sm:w-1/2 p-4">
-              <Link to="https://octocat-search.netlify.app/" target="_blank">
-                <div className="flex relative">
-                  <img
-                    alt="gallery"
-                    className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
-                    src={octocat}
-                  />
-                  <div className="px-8 py-10 relative z-10 w-full border-4 border-green-500 bg-gray-900 opacity-0 hover:opacity-100">
-                    <h1 className="tracking-widest text-lg title-font font-medium text-green-400 mb-1">
-                      Octocat Search
-                    </h1>
-                    <p className="leading-relaxed">
-                      Search Github es un proyecto que busca perfiles en GitHub.
-                      Ofrece información detallada de los usuarios.
-                    </p>
-                    <div className="flex justify-center mt-4 gap-4">
-                      <SiVite className="text-4xl text-green-400" />
-                      <SiReact className="text-4xl text-green-400" />
-                      <SiMaterialui className="text-4xl text-green-400" />
-                    </div>
+              <div className="flex relative">
+                <img
+                  alt="Desktop app Octocat Search"
+                  className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
+                  src={octocat}
+                />
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-green-500 bg-gray-900 opacity-0 hover:opacity-100">
+                  <h1 className="tracking-widest text-lg title-font font-medium text-green-400 mb-1">
+                    Octocat Search
+                  </h1>
+                  <p className="leading-relaxed">
+                    Search Github es un proyecto que busca perfiles en GitHub.
+                    Ofrece información detallada de los usuarios.
+                  </p>
+                  <div className="flex justify-center mt-4 gap-4">
+                    <SiVite className="text-4xl text-green-400" />
+                    <SiReact className="text-4xl text-green-400" />
+                    <SiMaterialui className="text-4xl text-green-400" />
+                    <Link
+                      to="https://octocat-search.netlify.app/"
+                      target="_blank"
+                    >
+                      <SiGooglechrome className="text-4xl text-gray-300" />
+                    </Link>
+                    <Link
+                      to="https://github.com/facuguardia/search-github"
+                      target="_blank"
+                    >
+                      <SiGithub className="text-4xl text-gray-300" />
+                    </Link>
                   </div>
                 </div>
-              </Link>
+              </div>
             </div>
             {/* Card 2 */}
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
                 <img
-                  alt="gallery"
+                  alt="Desktop app Shop Market"
                   className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                   src={shopMarket}
                 />
@@ -79,6 +86,15 @@ function Portfolio() {
                     <SiReact className="text-4xl text-green-400" />
                     <SiReactrouter className="text-4xl text-green-400" />
                     <SiSass className="text-4xl text-green-400" />
+                    <Link to="https://shop-market.netlify.app/" target="_blank">
+                      <SiGooglechrome className="text-4xl text-gray-300" />
+                    </Link>
+                    <Link
+                      to="https://github.com/facuguardia/react-shop"
+                      target="_blank"
+                    >
+                      <SiGithub className="text-4xl text-gray-300" />
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -87,21 +103,33 @@ function Portfolio() {
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
                 <img
-                  alt="gallery"
+                  alt="Desktop app Clone Spotify"
                   className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                   src={spotify}
                 />
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-green-500 bg-gray-900 opacity-0 hover:opacity-100">
                   <h1 className="tracking-widest text-lg title-font font-medium text-green-400 mb-1">
-                    Clone Spotify
+                    Clone Spotify UI
                   </h1>
                   <p className="leading-relaxed">
-                    Clone Spotify es una aplicación que permite buscar canciones
-                    y artistas. Se puede agregar, eliminar y editar.
+                    Clone Spotify UI es una réplica de la interfaz de Spotify.
+                    Se puede utilizar en dispositivos móviles y tablets.
                   </p>
                   <div className="flex justify-center mt-4 gap-4">
                     <SiNextdotjs className="text-4xl text-green-400" />
                     <SiTailwindcss className="text-4xl text-green-400" />
+                    <Link
+                      to="https://next13-spotify-ui.netlify.app/"
+                      target="_blank"
+                    >
+                      <SiGooglechrome className="text-4xl text-gray-300" />
+                    </Link>
+                    <Link
+                      to="https://github.com/facuguardia/spotify-next"
+                      target="_blank"
+                    >
+                      <SiGithub className="text-4xl text-gray-300" />
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -110,7 +138,7 @@ function Portfolio() {
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
                 <img
-                  alt="gallery"
+                  alt="Desktop app Dashboard UI"
                   className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                   src={dashboard}
                 />
@@ -119,13 +147,25 @@ function Portfolio() {
                     Dashboard UI
                   </h1>
                   <p className="leading-relaxed">
-                    Esta es una interfaz de usuario de un panel de
+                    Dashboard UI es una interfaz de usuario de un panel de
                     administración. Realizada con responsive design.
                   </p>
                   <div className="flex justify-center mt-4 gap-4">
                     <SiVite className="text-4xl text-green-400" />
                     <SiReact className="text-4xl text-green-400" />
                     <SiTailwindcss className="text-4xl text-green-400" />
+                    <Link
+                      to="https://tailwind-dash.netlify.app/"
+                      target="_blank"
+                    >
+                      <SiGooglechrome className="text-4xl text-gray-300" />
+                    </Link>
+                    <Link
+                      to="https://github.com/facuguardia/dashboard-react"
+                      target="_blank"
+                    >
+                      <SiGithub className="text-4xl text-gray-300" />
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -134,22 +174,34 @@ function Portfolio() {
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
                 <img
-                  alt="gallery"
+                  alt="Desktop app Messenger Service UI"
                   className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                   src={message}
                 />
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-green-500 bg-gray-900 opacity-0 hover:opacity-100">
                   <h1 className="tracking-widest text-lg title-font font-medium text-green-400 mb-1">
-                    Message UI
+                    Messenger Service UI
                   </h1>
                   <p className="leading-relaxed">
-                    Esta es una interfaz de usuario de un chat. Realizada con
-                    responsive design. Se copio la UI de la página uistore.org
+                    Interfaz de usuario de un chat. Realizada con responsive
+                    design. Se replicó un diseño de la página uistore.org
                   </p>
                   <div className="flex justify-center mt-4 gap-4">
                     <SiVite className="text-4xl text-green-400" />
                     <SiReact className="text-4xl text-green-400" />
                     <SiTailwindcss className="text-4xl text-green-400" />
+                    <Link
+                      to="https://messenger-service.netlify.app/"
+                      target="_blank"
+                    >
+                      <SiGooglechrome className="text-4xl text-gray-300" />
+                    </Link>
+                    <Link
+                      to="https://github.com/facuguardia/messenger-service"
+                      target="_blank"
+                    >
+                      <SiGithub className="text-4xl text-gray-300" />
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -158,7 +210,7 @@ function Portfolio() {
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
                 <img
-                  alt="gallery"
+                  alt="Desktop app My Portfolio"
                   className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                   src={portfolio}
                 />
@@ -167,12 +219,21 @@ function Portfolio() {
                     My Portfolio
                   </h1>
                   <p className="leading-relaxed">
-                    Este es mi primer portafolio realizado con HTML y CSS. Se
-                    puso en práctica el responsive design.
+                    Mi primer portafolio realizado con HTML y CSS. Se puso en
+                    práctica el responsive design.
                   </p>
                   <div className="flex justify-center mt-4 gap-4">
                     <SiHtml5 className="text-4xl text-green-400" />
                     <SiCss3 className="text-4xl text-green-400" />
+                    <Link to="https://facuguardia.github.io/" target="_blank">
+                      <SiGooglechrome className="text-4xl text-gray-300" />
+                    </Link>
+                    <Link
+                      to="https://github.com/facuguardia/facuguardia.github.io"
+                      target="_blank"
+                    >
+                      <SiGithub className="text-4xl text-gray-300" />
+                    </Link>
                   </div>
                 </div>
               </div>

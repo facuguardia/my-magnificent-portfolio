@@ -21,7 +21,7 @@ import { CiBeerMugFull } from "react-icons/ci";
 
 function Resume() {
   return (
-    <div className="w-auto h-screen pl-5 pr-3 overflow-y-auto">
+    <div className="w-auto h-screen pl-5 pr-3 overflow-y-hidden">
       <Navbar />
       <div className="grid grid-cols-3 gap-5">
         {/* Columna 1 */}
