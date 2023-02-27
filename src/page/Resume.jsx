@@ -186,7 +186,12 @@ function Resume() {
               what can i do ?
             </h2>
             <div className="grid grid-cols-1 pt-5 text-center">
-              <p className="flex items-center gap-2">Personal website/portfolio - E-commerce website - Interactive web application - Custom landing page - Blogging or content publishing platform - Effective marketing landing page - Interactive data visualization tool</p>
+              <p className="flex items-center gap-2">
+                Personal website/portfolio - E-commerce website - Interactive
+                web application - Custom landing page - Blogging or content
+                publishing platform - Effective marketing landing page -
+                Interactive data visualization tool
+              </p>
             </div>
           </div>
           {/* Hobbies & Interests */}
