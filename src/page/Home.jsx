@@ -18,7 +18,7 @@ function Home() {
           {/* Buttons */}
           <div className="flex justify-center items-center gap-2 pt-3">
             <Link
-              to="https://drive.google.com/file/d/1i7_wyIQYtpuYga0fr57k8JutQwDDUx2y/view?usp=sharing"
+              to="https://drive.google.com/file/d/1fL6d8vwP-_dKfWrdXTdtyg6J0zrZ-3cy/view?usp=sharing"
               target="_blank"
               className="border py-2 px-6 rounded-full hover:border-[#09e507] hover:text-[#09e507]"
             >
@@ -38,7 +38,7 @@ function Home() {
       </div>
       {/* Icons */}
       <footer className="flex justify-between items-center">
-        <div className="flex gap-5 pl-8 pb-5 text-2xl">
+        <div className="flex gap-5 pl-8 pb-32 text-2xl">
           <Link to="https://github.com/facuguardia" target="_blank">
             <BsGithub className="hover:text-[#09e507]" />
           </Link>
@@ -51,7 +51,7 @@ function Home() {
         </div>
         {/* Copyrigth */}
         <div>
-          <p className="text-gray-400 text-sm pr-4 pb-5">
+          <p className="text-gray-400 text-sm pr-4 pb-32">
             © 2023 Facundo Guardia. All rights reserved.
           </p>
         </div>

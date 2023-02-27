@@ -30,7 +30,7 @@ function Resume() {
           <h2 className="text-xl font-medium text-white uppercase underline underline-offset-8 decoration-green-500">
             Software Skills
           </h2>
-          <div className="grid grid-cols-2 pt-5">
+          <div className="grid grid-cols-2 pt-5 text-xl">
             <span className="flex items-center gap-2">
               <SiHtml5 />
               HTML5
@@ -86,7 +86,7 @@ function Resume() {
               Languages
             </h2>
             <div className="grid grid-cols-1 pt-5">
-              <span className="flex items-center gap-2">Inglés (B1)</span>
+              <span className="flex items-center gap-2">Inglés (A2)</span>
               <span className="flex items-center gap-2">Español (Nativo)</span>
             </div>
           </div>
