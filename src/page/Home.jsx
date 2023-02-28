@@ -8,10 +8,10 @@ import { BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs";
 
 function Home() {
   return (
-    <div className="w-auto h-screen flex flex-col justify-between overflow-y-hidden">
+    <div className="w-auto h-screen md:min-h-screen flex flex-col justify-between p-4">
       <Navbar />
-      <div className="flex justify-between items-center">
-        <div className="flex flex-col pl-32">
+      <div className="flex md:justify-center items-center md:ml-16">
+        <div>
           <h2 className="text-3xl font-medium text-gray- uppercase">Facundo</h2>
           <h1 className="text-6xl font-bold text-white uppercase">Guardia</h1>
           <p className="text-2xl pl-8 text-gray-500">Frontend Developer</p>
@@ -22,7 +22,7 @@ function Home() {
               target="_blank"
               className="border py-2 px-6 rounded-full hover:border-[#09e507] hover:text-[#09e507]"
             >
-              Curriculum
+              Currículum
             </Link>
             <Link
               to="/portfolio"
@@ -33,12 +33,18 @@ function Home() {
           </div>
         </div>
         <div>
-          <img src={imgHome} alt="" className="grayscale opacity-60" />
+          <img
+            src={imgHome}
+            alt=""
+            // necesito ajustar el tamaño de la imagen
+
+            className="hidden sm:block grayscale opacity-60 w-[760px] object-contain"
+          />
         </div>
       </div>
       {/* Icons */}
-      <footer className="flex justify-between items-center">
-        <div className="flex gap-5 pl-8 pb-32 text-2xl">
+      <footer className="flex flex-col lg:flex-row lg:justify-between items-center gap-3">
+        <div className="flex gap-3">
           <Link to="https://github.com/facuguardia" target="_blank">
             <BsGithub className="hover:text-[#09e507]" />
           </Link>
@@ -51,7 +57,7 @@ function Home() {
         </div>
         {/* Copyrigth */}
         <div>
-          <p className="text-gray-400 text-sm pr-4 pb-32">
+          <p className="text-gray-400 text-sm">
             © 2023 Facundo Guardia. All rights reserved.
           </p>
         </div>

@@ -2,8 +2,8 @@ import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div className="w-full rounded-lg p-4 flex items-center justify-end gap-4">
-      <nav className="md:col-span-8 flex items-center gap-4 justify-center">
+    <div className="w-full rounded-lg p-4 flex justify-center md:justify-end items-center">
+      <nav className="md:col-span-8 flex items-center gap-4">
         <NavLink
           to="/"
           href="#"

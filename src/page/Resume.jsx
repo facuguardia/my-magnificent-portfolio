@@ -21,9 +21,9 @@ import { CiBeerMugFull } from "react-icons/ci";
 
 function Resume() {
   return (
-    <div className="w-auto h-screen pl-5 pr-3 overflow-y-hidden">
+    <div className="w-auto h-screen p-4 lg:pl-5 lg:pr-3 overflow-y-auto lg:overflow-y-hidden">
       <Navbar />
-      <div className="grid grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
         {/* Columna 1 */}
         <div className="col-span-1 pt-2">
           {/* Software Skills */}
@@ -86,7 +86,7 @@ function Resume() {
               Languages
             </h2>
             <div className="grid grid-cols-1 pt-5">
-              <span className="flex items-center gap-2">Inglés (A2)</span>
+              <span className="flex items-center gap-2">Inglés (B1)</span>
               <span className="flex items-center gap-2">Español (Nativo)</span>
             </div>
           </div>
@@ -99,18 +99,18 @@ function Resume() {
               <p className="flex items-center gap-2">
                 Comunicación efectiva - Trabajo en equipo - Adaptabilidad -
                 Solución de problemas - Habilidad para aprender - Atención al
-                detalle - Creatividad - Gestión del tiempo - Pensamiento crítico
+                detalle - Creatividad
               </p>
             </div>
           </div>
         </div>
         {/* Columna 2 */}
-        <div className="col-span-1 pt-2">
+        <div className="col-span-1 md:pt-2 md:pl-5 lg:pl-0">
           {/* Experience */}
-          <h2 className="text-xl pl-24 font-medium text-white uppercase underline underline-offset-8 decoration-green-500">
+          <h2 className="text-xl lg:pl-24 font-medium text-white uppercase underline underline-offset-8 decoration-green-500">
             Experience
           </h2>
-          <div className="pt-5 pl-24">
+          <div className="pt-5 lg:pl-24">
             <ol className="relative border-l border-gray-200 dark:border-gray-700">
               <li className="mb-10 ml-4">
                 <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
@@ -165,7 +165,7 @@ function Resume() {
           </div>
         </div>
         {/* Columna 3 */}
-        <div className="col-span-1 pl-5 pt-2">
+        <div className="col-span-1 lg:pl-5 lg:pt-2">
           {/* Educacion */}
           <div>
             <h2 className="text-xl font-medium text-white uppercase underline underline-offset-8 decoration-green-500">

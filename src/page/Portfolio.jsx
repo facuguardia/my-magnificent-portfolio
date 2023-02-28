@@ -25,10 +25,10 @@ import {
 
 function Portfolio() {
   return (
-    <div className="w-full h-screen overflow-y-auto">
+    <div className="w-full h-screen p-4 overflow-y-auto">
       <Navbar />
       <section>
-        <div className="pt-5 pb-5">
+        <div className="lg:pt-5 pb-4 lg:pb-5">
           <div className="flex flex-wrap">
             {/* Card 1 */}
             <div className="lg:w-1/3 sm:w-1/2 p-4">
