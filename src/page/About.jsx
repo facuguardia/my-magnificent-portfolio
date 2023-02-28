@@ -6,11 +6,11 @@ import imgProfile from "../assets/profile.jpg";
 function About() {
   return (
     <>
-      <div className="pt-4 pr-4">
+      <div className="p-4">
         <Navbar />
       </div>
-      <div className="w-auto h-screen flex flex-col  md:justify-center overflow-y-hidden p-4">
-        <div className="flex lg:justify-between text-center">
+      <div className="w-auto h-screen flex flex-col md:justify-center overflow-y-hidden p-4">
+        <div className="flex justify-center items-center lg:justify-between text-center lg:text-start">
           <div className="flex flex-col lg:pl-20 gap-4 pt-10 md:pt-0">
             <h1 className="text-4xl font-medium text-white uppercase underline underline-offset-8 decoration-green-500">
               About
@@ -34,17 +34,17 @@ function About() {
             <img
               src={imgProfile}
               alt=""
-              className="hidden lg:block grayscale"
+              className="hidden lg:block grayscale border-l-2 m-4"
             />
           </div>
         </div>
         {/* Icons */}
-        <footer className="flex text-lg text-center text-gray-500 pl-24 md:pl-80 pt-10">
+        <div className="flex justify-center lg:justify-start text-lg text-center text-gray-500 lg:pl-72 pt-10">
           <h3>
             <b className="text-white">Facundo Guardia</b>
             <hr /> Mendoza - Argentina{" "}
           </h3>
-        </footer>
+        </div>
       </div>
     </>
   );
