@@ -8,6 +8,8 @@ import spotify from "../assets/spotify.png";
 import dashboard from "../assets/dashboard.png";
 import portfolio from "../assets/portafolio.png";
 import message from "../assets/message.png";
+import foodApp from "../assets/food-desktop.png";
+import ecommerce from "../assets/platzi-app.png";
 // Icons
 import {
   SiHtml5,
@@ -21,6 +23,8 @@ import {
   SiReactrouter,
   SiGooglechrome,
   SiGithub,
+  SiWebpack,
+  SiFirebase,
 } from "react-icons/si";
 
 function Portfolio() {
@@ -31,6 +35,80 @@ function Portfolio() {
         <div className="lg:pt-5 pb-4 lg:pb-5">
           <div className="flex flex-wrap">
             {/* Card 1 */}
+            <div className="lg:w-1/3 sm:w-1/2 p-4">
+              <div className="flex relative">
+                <img
+                  alt="Desktop app My Portfolio"
+                  className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
+                  src={foodApp}
+                />
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-green-500 bg-gray-900 opacity-0 hover:opacity-100">
+                  <h1 className="tracking-widest text-lg title-font font-medium text-green-400 mb-1">
+                    Fast Food App
+                  </h1>
+                  <p className="leading-relaxed">
+                    Proyecto grupal, la aplicación web permite realizar un
+                    pedido de comida rápida, integración con Firebase y Mercado
+                    Pago. Total responsive.
+                  </p>
+                  <div className="flex justify-center mt-4 gap-4">
+                    <SiVite className="text-4xl text-green-400" />
+                    <SiReact className="text-4xl text-green-400" />
+                    <SiReactrouter className="text-4xl text-green-400" />
+                    <SiTailwindcss className="text-4xl text-green-400" />
+                    <SiFirebase className="text-4xl text-green-400" />
+                    <Link to="#" target="_blank">
+                      <SiGooglechrome className="text-4xl text-gray-300" />
+                    </Link>
+                    <Link
+                      to="https://github.com/facuguardia/app-food/tree/develop"
+                      target="_blank"
+                    >
+                      <SiGithub className="text-4xl text-gray-300" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Card 2 */}
+            <div className="lg:w-1/3 sm:w-1/2 p-4">
+              <div className="flex relative">
+                <img
+                  alt="Desktop app My Portfolio"
+                  className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
+                  src={ecommerce}
+                />
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-green-500 bg-gray-900 opacity-0 hover:opacity-100">
+                  <h1 className="tracking-widest text-lg title-font font-medium text-green-400 mb-1">
+                    Ecommerce Platzi App
+                  </h1>
+                  <p className="leading-relaxed">
+                    La aplicación web permite realizar un pedido de productos
+                    del Platzi Store, integración con Paypal y Google Maps.
+                  </p>
+                  <div className="flex justify-center mt-4 gap-4">
+                    <SiWebpack className="text-4xl text-green-400" />
+                    <SiReact className="text-4xl text-green-400" />
+                    <SiCss3 className="text-4xl text-green-400" />
+                    <SiFirebase className="text-4xl text-green-400" />
+                    <Link
+                      to="https://platzi-merch.netlify.app/"
+                      target="_blank"
+                    >
+                      <SiGooglechrome className="text-4xl text-gray-300" />
+                    </Link>
+                    <Link
+                      to="
+                      https://github.com/facuguardia/platzi-conf-merch"
+                      target="_blank"
+                    >
+                      <SiGithub className="text-4xl text-gray-300" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Card 3 */}
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
                 <img
@@ -66,7 +144,7 @@ function Portfolio() {
                 </div>
               </div>
             </div>
-            {/* Card 2 */}
+            {/* Card 4 */}
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
                 <img
@@ -99,7 +177,7 @@ function Portfolio() {
                 </div>
               </div>
             </div>
-            {/* Card 3 */}
+            {/* Card 5 */}
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
                 <img
@@ -134,7 +212,7 @@ function Portfolio() {
                 </div>
               </div>
             </div>
-            {/* Card 4 */}
+            {/* Card 6 */}
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
                 <img
@@ -170,7 +248,7 @@ function Portfolio() {
                 </div>
               </div>
             </div>
-            {/* Card 5 */}
+            {/* Card 7 */}
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
                 <img
@@ -206,7 +284,7 @@ function Portfolio() {
                 </div>
               </div>
             </div>
-            {/* Card 6 */}
+            {/* Card 8 */}
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
                 <img
