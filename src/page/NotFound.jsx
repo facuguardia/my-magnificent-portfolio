@@ -1,20 +1,25 @@
+import { Link } from "react-router-dom";
+
 function NotFound() {
   return (
-    <section className="w-full h-screen px-4 py-32 mx-auto max-w-7xl">
-      <div className="w-full mx-auto lg:w-1/3">
-        <p className="mt-5 mb-3 text-xl font-bold text-gray-300 md:text-2xl">
-          Página no encontrada (404)
+    <div class="grid h-screen px-4 place-content-center">
+      <div class="text-center">
+        <h1 class="font-black text-gray-700 text-9xl">404</h1>
+
+        <p class="text-2xl font-bold tracking-tight text-gray-300 sm:text-4xl">
+          Uh-oh!
         </p>
-        <p className="mb-3 text-base font-medium text-gray-700">
-          Es posible que la página que está buscando se haya movido o ya no
-          exista. Regrese a nuestra{" "}
-          <a href="/" className="underline text-green-500">
-            página de inicio
-          </a>
-          , o eche un vistazo a una de las secciones a continuación.
-        </p>
+
+        <p class="mt-4 text-gray-400">We can't find that page.</p>
+
+        <Link
+          to="/"
+          class="inline-block px-5 py-3 mt-6 text-sm font-medium text-black bg-green-500 rounded-full hover:bg-green-700 focus:outline-none focus:ring"
+        >
+          Go Back Home
+        </Link>
       </div>
-    </section>
+    </div>
   );
 }
 

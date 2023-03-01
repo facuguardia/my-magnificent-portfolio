@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 // Components
 import Navbar from "../components/Navbar";
-import Sidebar from "../components/Sidebar";
+import MenuMobile from "../components/MenuMobile";
 // Images
 import imgHome from "../assets/home.jpg";
 // icons
@@ -10,11 +10,10 @@ import { BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs";
 function Home() {
   return (
     <>
-      {/* Sidebar */}
       <div>
-        <Sidebar />
+        <MenuMobile />
       </div>
-      <div className="w-auto h-screen md:min-h-screen flex flex-col justify-between p-4 md:pb-8">
+      <div className="w-auto h-screen md:min-h-screen flex flex-col justify-between p-4 md:pb-8 lg:pb-4">
         {/* Navbar */}
         <Navbar />
         <div className="flex justify-center items-center md:ml-16 pt-64 md:pt-0">
