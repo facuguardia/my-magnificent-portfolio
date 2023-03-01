@@ -98,8 +98,7 @@ function Portfolio() {
                       <SiGooglechrome className="text-4xl text-gray-300" />
                     </Link>
                     <Link
-                      to="
-                      https://github.com/facuguardia/platzi-conf-merch"
+                      to="https://github.com/facuguardia/platzi-conf-merch"
                       target="_blank"
                     >
                       <SiGithub className="text-4xl text-gray-300" />
