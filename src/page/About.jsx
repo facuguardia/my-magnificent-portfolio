@@ -1,5 +1,6 @@
 // Components
 import Navbar from "../components/Navbar";
+import Sidebar from "../components/Sidebar";
 // Images
 import imgProfile from "../assets/profile.jpg";
 
@@ -7,7 +8,10 @@ function About() {
   return (
     <>
       <div className="p-4">
+        {/* Navbar */}
         <Navbar />
+        {/* Sidebar */}
+        <Sidebar />
       </div>
       <div className="w-auto h-screen flex flex-col md:justify-center overflow-y-hidden p-4">
         <div className="flex justify-center items-center lg:justify-between text-center lg:text-start">

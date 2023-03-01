@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 // Components
 import Navbar from "../components/Navbar";
+import Sidebar from "../components/Sidebar";
 // Images
 import octocat from "../assets/octocat.png";
 import shopMarket from "../assets/shop-market.png";
@@ -27,16 +28,19 @@ import {
   SiFirebase,
 } from "react-icons/si";
 
-function Portfolio() {
+function Projects() {
   return (
     <div className="w-full h-screen p-4 overflow-y-auto">
+      {/* Sidebar */}
+      <Sidebar />
+      {/* Navbar */}
       <Navbar />
       <section>
         <div className="lg:pt-5 pb-4 lg:pb-5">
-          <div className="flex flex-wrap">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {/* Card 1 */}
-            <div className="lg:w-1/3 sm:w-1/2 p-4">
-              <div className="flex relative">
+            <div className="col-span-1 p-4">
+              <div className="relative">
                 <img
                   alt="Desktop app My Portfolio"
                   className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
@@ -44,17 +48,15 @@ function Portfolio() {
                 />
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-green-500 bg-gray-900 opacity-0 hover:opacity-100">
                   <h1 className="tracking-widest text-lg title-font font-medium text-green-400 mb-1">
-                    Fast Food App
+                    Fast Food App Deliveri
                   </h1>
                   <p className="leading-relaxed">
-                    Proyecto grupal, la aplicación web permite realizar un
-                    pedido de comida rápida, integración con Firebase y Mercado
-                    Pago. Total responsive.
+                    Aplicación web para pedidos de comida rápida. Integración
+                    con APIs como Firebase y Mercado Pago.
                   </p>
                   <div className="flex justify-center mt-4 gap-4">
                     <SiVite className="text-4xl text-green-400" />
                     <SiReact className="text-4xl text-green-400" />
-                    <SiReactrouter className="text-4xl text-green-400" />
                     <SiTailwindcss className="text-4xl text-green-400" />
                     <SiFirebase className="text-4xl text-green-400" />
                     <Link to="#" target="_blank">
@@ -71,8 +73,8 @@ function Portfolio() {
               </div>
             </div>
             {/* Card 2 */}
-            <div className="lg:w-1/3 sm:w-1/2 p-4">
-              <div className="flex relative">
+            <div className="col-span-1 p-4">
+              <div className="relative">
                 <img
                   alt="Desktop app My Portfolio"
                   className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
@@ -108,8 +110,8 @@ function Portfolio() {
               </div>
             </div>
             {/* Card 3 */}
-            <div className="lg:w-1/3 sm:w-1/2 p-4">
-              <div className="flex relative">
+            <div className="col-span-1 p-4">
+              <div className="relative">
                 <img
                   alt="Desktop app Octocat Search"
                   className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
@@ -144,8 +146,8 @@ function Portfolio() {
               </div>
             </div>
             {/* Card 4 */}
-            <div className="lg:w-1/3 sm:w-1/2 p-4">
-              <div className="flex relative">
+            <div className="col-span-1 p-4">
+              <div className="relative">
                 <img
                   alt="Desktop app Shop Market"
                   className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
@@ -177,8 +179,8 @@ function Portfolio() {
               </div>
             </div>
             {/* Card 5 */}
-            <div className="lg:w-1/3 sm:w-1/2 p-4">
-              <div className="flex relative">
+            <div className="col-span-1 p-4">
+              <div className="relative">
                 <img
                   alt="Desktop app Clone Spotify"
                   className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
@@ -212,8 +214,8 @@ function Portfolio() {
               </div>
             </div>
             {/* Card 6 */}
-            <div className="lg:w-1/3 sm:w-1/2 p-4">
-              <div className="flex relative">
+            <div className="col-span-1 p-4">
+              <div className="relative">
                 <img
                   alt="Desktop app Dashboard UI"
                   className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
@@ -248,8 +250,8 @@ function Portfolio() {
               </div>
             </div>
             {/* Card 7 */}
-            <div className="lg:w-1/3 sm:w-1/2 p-4">
-              <div className="flex relative">
+            <div className="col-span-1 p-4">
+              <div className="relative">
                 <img
                   alt="Desktop app Messenger Service UI"
                   className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
@@ -284,8 +286,8 @@ function Portfolio() {
               </div>
             </div>
             {/* Card 8 */}
-            <div className="lg:w-1/3 sm:w-1/2 p-4">
-              <div className="flex relative">
+            <div className="col-span-1 p-4">
+              <div className="relative">
                 <img
                   alt="Desktop app My Portfolio"
                   className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
@@ -322,4 +324,4 @@ function Portfolio() {
   );
 }
 
-export default Portfolio;
+export default Projects;

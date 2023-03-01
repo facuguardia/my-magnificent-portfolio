@@ -1,5 +1,6 @@
 // Components
 import Navbar from "../components/Navbar";
+import Sidebar from "../components/Sidebar";
 // Icons
 import {
   SiHtml5,
@@ -22,6 +23,9 @@ import { CiBeerMugFull } from "react-icons/ci";
 function Resume() {
   return (
     <div className="w-auto h-screen p-4 lg:pl-5 lg:pr-3 overflow-y-auto lg:overflow-y-hidden">
+      {/* Sidebar */}
+      <Sidebar />
+      {/* Navbar */}
       <Navbar />
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
         {/* Columna 1 */}
