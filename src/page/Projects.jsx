@@ -61,7 +61,7 @@ function Projects() {
                       <SiReact className="text-4xl text-green-400" />
                       <SiTailwindcss className="text-4xl text-green-400" />
                       <SiFirebase className="text-4xl text-green-400" />
-                      <Link to="#" target="_blank">
+                      <Link to="https://fastfood-app.netlify.app/" target="_blank">
                         <SiGooglechrome className="text-4xl text-gray-300" />
                       </Link>
                       <Link
