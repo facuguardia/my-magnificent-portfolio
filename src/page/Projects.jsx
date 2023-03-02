@@ -7,10 +7,11 @@ import octocat from "../assets/octocat.png";
 import shopMarket from "../assets/shop-market.png";
 import spotify from "../assets/spotify.png";
 import dashboard from "../assets/dashboard.png";
-import portfolio from "../assets/portafolio.png";
+import portafolio from "../assets/portafolio.png";
 import message from "../assets/message.png";
 import foodApp from "../assets/food-desktop.png";
 import ecommerce from "../assets/platzi-app.png";
+import portfolio from "../assets/portfolio.png";
 // Icons
 import {
   SiHtml5,
@@ -79,6 +80,39 @@ function Projects() {
                   <img
                     alt="Desktop app My Portfolio"
                     className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
+                    src={portfolio}
+                  />
+                  <div className="px-8 py-10 relative z-10 w-full border-4 border-green-500 bg-gray-900 opacity-0 hover:opacity-100">
+                    <h1 className="tracking-widest text-lg title-font font-medium text-green-400 mb-1">
+                      Portfolio Web
+                    </h1>
+                    <p className="leading-relaxed">
+                      Este es mi portafolio web busca ser una página web minimalista y elegante, 100% responsive. Toda la info en un solo lugar.
+                    </p>
+                    <div className="flex justify-center mt-4 gap-4">
+                      <SiVite className="text-4xl text-green-400" />
+                      <SiReact className="text-4xl text-green-400" />
+                      <SiReactrouter className="text-4xl text-green-400" />
+                      <SiTailwindcss className="text-4xl text-green-400" />
+                      <Link to="https://facuguardia.netlify.app/" target="_blank">
+                        <SiGooglechrome className="text-4xl text-gray-300" />
+                      </Link>
+                      <Link
+                        to="https://github.com/facuguardia/my-magnificent-portfolio"
+                        target="_blank"
+                      >
+                        <SiGithub className="text-4xl text-gray-300" />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* Card 3 */}
+              <div className="col-span-1 p-4">
+                <div className="relative">
+                  <img
+                    alt="Desktop app My Portfolio"
+                    className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                     src={ecommerce}
                   />
                   <div className="px-8 py-10 relative z-10 w-full border-4 border-green-500 bg-gray-900 opacity-0 hover:opacity-100">
@@ -110,7 +144,7 @@ function Projects() {
                   </div>
                 </div>
               </div>
-              {/* Card 3 */}
+              {/* Card 4 */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img
@@ -146,7 +180,7 @@ function Projects() {
                   </div>
                 </div>
               </div>
-              {/* Card 4 */}
+              {/* Card 5 */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img
@@ -182,7 +216,7 @@ function Projects() {
                   </div>
                 </div>
               </div>
-              {/* Card 5 */}
+              {/* Card 6 */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img
@@ -217,7 +251,7 @@ function Projects() {
                   </div>
                 </div>
               </div>
-              {/* Card 6 */}
+              {/* Card 7 */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img
@@ -253,7 +287,7 @@ function Projects() {
                   </div>
                 </div>
               </div>
-              {/* Card 7 */}
+              {/* Card 8 */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img
@@ -295,7 +329,7 @@ function Projects() {
                   <img
                     alt="Desktop app My Portfolio"
                     className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
-                    src={portfolio}
+                    src={portafolio}
                   />
                   <div className="px-8 py-10 relative z-10 w-full border-4 border-green-500 bg-gray-900 opacity-0 hover:opacity-100">
                     <h1 className="tracking-widest text-lg title-font font-medium text-green-400 mb-1">

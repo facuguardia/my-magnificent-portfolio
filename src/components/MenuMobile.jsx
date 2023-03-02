@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 // Icons
 import { RiMenu3Fill, RiCloseFill } from "react-icons/ri";
@@ -7,6 +7,7 @@ function MenuMobile() {
   const [menu, setMenu] = useState(false);
 
   return (
+    // Container
     <div
       className={`lg:hidden bg-black bg-opacity-90 fixed flex justify-center  w-[100%] h-full z-50 transition-all duration-300 ${
         menu ? "top-0" : "-top-full"
@@ -22,7 +23,7 @@ function MenuMobile() {
             Home
           </span>
         </NavLink>
-
+        {/* Items 2 */}
         <NavLink
           to="/about"
           className="w-[90%] h-auto flex justify-center items-center gap-3 border-b-[1px] border-gray-500 px-4 py-3 text-white hover:text-green-500"
@@ -31,7 +32,7 @@ function MenuMobile() {
             About
           </span>
         </NavLink>
-
+        {/* Items 3 */}
         <NavLink
           to="/resume"
           className="w-[90%] h-auto flex justify-center items-center gap-3 border-b-[1px] border-gray-500 px-4 py-3 text-white hover:text-green-500"
@@ -40,7 +41,7 @@ function MenuMobile() {
             Resume
           </span>
         </NavLink>
-
+        {/* Items 4 */}
         <NavLink
           to="/projects"
           className="w-[90%] h-auto flex justify-center items-center gap-3 px-4 py-3 text-white hover:text-green-500"
