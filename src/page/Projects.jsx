@@ -34,10 +34,10 @@ function Projects() {
       <div>
         <MenuMobile />
       </div>
-      <div className="w-full h-screen p-4 overflow-y-auto">
+      <div className="w-full h-screen pt-10 pb-4 md:p-4 overflow-y-auto">
         <Navbar />
         <section>
-          <div className="lg:pt-5 pb-4 lg:pb-5">
+          <div className="lg:pt-5 lg:pb-5">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               {/* Card 1 */}
               <div className="col-span-1 p-4">

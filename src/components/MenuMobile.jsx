@@ -1,17 +1,14 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 // Icons
-import { RiHome3Fill, RiMenu3Fill, RiCloseFill } from "react-icons/ri";
-import { SiAboutdotme } from "react-icons/si";
-import { SlDocs } from "react-icons/sl";
-import { AiOutlineFundProjectionScreen } from "react-icons/ai";
+import { RiMenu3Fill, RiCloseFill } from "react-icons/ri";
 
 function MenuMobile() {
   const [menu, setMenu] = useState(false);
 
   return (
     <div
-      className={`lg:hidden bg-black bg-opacity-80 fixed flex justify-center  w-[100%] h-full z-50 transition-all duration-300 ${
+      className={`lg:hidden bg-black bg-opacity-90 fixed flex justify-center  w-[100%] h-full z-50 transition-all duration-300 ${
         menu ? "top-0" : "-top-full"
       }`}
     >
@@ -21,9 +18,8 @@ function MenuMobile() {
           to="/"
           className="w-[90%] h-auto flex justify-center border-b-[1px] border-gray-500 px-4 py-3 text-white hover:text-green-500"
         >
-          <span className="text-sm font-medium flex items-center gap-3">
-            {" "}
-            <RiHome3Fill /> Home{" "}
+          <span className="text-2xl font-medium flex items-center gap-3">
+            Home
           </span>
         </NavLink>
 
@@ -31,9 +27,8 @@ function MenuMobile() {
           to="/about"
           className="w-[90%] h-auto flex justify-center items-center gap-3 border-b-[1px] border-gray-500 px-4 py-3 text-white hover:text-green-500"
         >
-          <span className="text-sm font-medium flex items-center gap-3">
-            {" "}
-            <SiAboutdotme /> About{" "}
+          <span className="text-2xl font-medium flex items-center gap-3">
+            About
           </span>
         </NavLink>
 
@@ -41,9 +36,8 @@ function MenuMobile() {
           to="/resume"
           className="w-[90%] h-auto flex justify-center items-center gap-3 border-b-[1px] border-gray-500 px-4 py-3 text-white hover:text-green-500"
         >
-          <span className="text-sm font-medium flex items-center gap-3">
-            {" "}
-            <SlDocs /> Resume{" "}
+          <span className="text-2xl font-medium flex items-center gap-3">
+            Resume
           </span>
         </NavLink>
 
@@ -51,9 +45,8 @@ function MenuMobile() {
           to="/projects"
           className="w-[90%] h-auto flex justify-center items-center gap-3 px-4 py-3 text-white hover:text-green-500"
         >
-          <span className="text-sm font-medium flex items-center gap-3">
-            {" "}
-            <AiOutlineFundProjectionScreen /> Projects{" "}
+          <span className="text-2xl font-medium flex items-center gap-3">
+            Projects
           </span>
         </NavLink>
       </nav>
