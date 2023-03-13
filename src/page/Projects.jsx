@@ -12,6 +12,8 @@ import message from "../assets/message.png";
 import foodApp from "../assets/food-desktop.png";
 import ecommerce from "../assets/platzi-app.png";
 import portfolio from "../assets/portfolio.png";
+import starwars from "../assets/starwars.png";
+import pokedex from "../assets/pokedex.png";
 // Icons
 import {
   SiHtml5,
@@ -27,7 +29,9 @@ import {
   SiGithub,
   SiWebpack,
   SiFirebase,
+  SiExpo,
 } from "react-icons/si";
+import { TbBrandReactNative } from "react-icons/tb";
 
 function Projects() {
   return (
@@ -41,6 +45,65 @@ function Projects() {
           <div className="lg:pt-5 lg:pb-5">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               {/* Card 1 */}
+              <div className="col-span-1 p-4">
+                <div className="relative">
+                  <img
+                    alt="Desktop app My Portfolio"
+                    className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
+                    src={starwars}
+                  />
+                  <div className="px-8 py-10 relative z-10 w-full border-4 border-green-500 bg-gray-900 opacity-0 hover:opacity-100">
+                    <h1 className="tracking-widest text-lg title-font font-medium text-green-400 mb-1">
+                      Star Wars App - Challenge
+                    </h1>
+                    <p className="leading-relaxed">
+                      Aplicacion web que consume la API de Star Wars y muestra
+                      los personajes con sus características.
+                    </p>
+                    <div className="flex justify-center mt-4 gap-4">
+                      <SiVite className="text-4xl text-green-400" />
+                      <SiReact className="text-4xl text-green-400" />
+                      <SiTailwindcss className="text-4xl text-green-400" />
+                      <Link
+                        to="https://github.com/facuguardia/challenge-kairox"
+                        target="_blank"
+                      >
+                        <SiGithub className="text-4xl text-gray-300" />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* Card 2 */}
+              <div className="col-span-1 p-4">
+                <div className="relative">
+                  <img
+                    alt="Desktop app My Portfolio"
+                    className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
+                    src={pokedex}
+                  />
+                  <div className="px-8 py-10 relative z-10 w-full border-4 border-green-500 bg-gray-900 opacity-0 hover:opacity-100">
+                    <h1 className="tracking-widest text-lg title-font font-medium text-green-400 mb-1">
+                      Pokedex App
+                    </h1>
+                    <p className="leading-relaxed">
+                      Aplicación móvil que consume la API de Pokemón y muestra
+                      los pokemones con sus características.
+                    </p>
+                    <div className="flex justify-center mt-4 gap-4">
+                      <TbBrandReactNative className="text-4xl text-green-400" />
+                      <SiExpo className="text-4xl text-green-400" />
+                      <Link
+                        to="https://github.com/facuguardia/pokedex-app"
+                        target="_blank"
+                      >
+                        <SiGithub className="text-4xl text-gray-300" />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* Card 3 */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img
@@ -61,7 +124,10 @@ function Projects() {
                       <SiReact className="text-4xl text-green-400" />
                       <SiTailwindcss className="text-4xl text-green-400" />
                       <SiFirebase className="text-4xl text-green-400" />
-                      <Link to="https://fastfood-app.netlify.app/" target="_blank">
+                      <Link
+                        to="https://fastfood-app.netlify.app/"
+                        target="_blank"
+                      >
                         <SiGooglechrome className="text-4xl text-gray-300" />
                       </Link>
                       <Link
@@ -74,7 +140,7 @@ function Projects() {
                   </div>
                 </div>
               </div>
-              {/* Card 2 */}
+              {/* Card 4 */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img
@@ -87,14 +153,19 @@ function Projects() {
                       Portfolio Web
                     </h1>
                     <p className="leading-relaxed">
-                      Este es mi portafolio web busca ser una página web minimalista y elegante, 100% responsive. Toda la info en un solo lugar.
+                      Este es mi portafolio web busca ser una página web
+                      minimalista y elegante, 100% responsive. Toda la info en
+                      un solo lugar.
                     </p>
                     <div className="flex justify-center mt-4 gap-4">
                       <SiVite className="text-4xl text-green-400" />
                       <SiReact className="text-4xl text-green-400" />
                       <SiReactrouter className="text-4xl text-green-400" />
                       <SiTailwindcss className="text-4xl text-green-400" />
-                      <Link to="https://facuguardia.netlify.app/" target="_blank">
+                      <Link
+                        to="https://facuguardia.netlify.app/"
+                        target="_blank"
+                      >
                         <SiGooglechrome className="text-4xl text-gray-300" />
                       </Link>
                       <Link
@@ -107,7 +178,7 @@ function Projects() {
                   </div>
                 </div>
               </div>
-              {/* Card 3 */}
+              {/* Card 5 */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img
@@ -144,7 +215,7 @@ function Projects() {
                   </div>
                 </div>
               </div>
-              {/* Card 4 */}
+              {/* Card 6 */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img
@@ -180,7 +251,7 @@ function Projects() {
                   </div>
                 </div>
               </div>
-              {/* Card 5 */}
+              {/* Card 7 */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img
@@ -216,7 +287,7 @@ function Projects() {
                   </div>
                 </div>
               </div>
-              {/* Card 6 */}
+              {/* Card 8 */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img
@@ -251,7 +322,7 @@ function Projects() {
                   </div>
                 </div>
               </div>
-              {/* Card 7 */}
+              {/* Card 9 */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img
@@ -287,7 +358,7 @@ function Projects() {
                   </div>
                 </div>
               </div>
-              {/* Card 8 */}
+              {/* Card 10 */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img
@@ -323,7 +394,7 @@ function Projects() {
                   </div>
                 </div>
               </div>
-              {/* Card 8 */}
+              {/* Card 11 */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img

@@ -15,10 +15,12 @@ import {
   SiTailwindcss,
   SiGithub,
   SiScrumalliance,
+  SiExpo,
 } from "react-icons/si";
 import { FaRunning, FaPlaneDeparture } from "react-icons/fa";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { CiBeerMugFull } from "react-icons/ci";
+import { TbBrandReactNative } from "react-icons/tb";
 
 function Resume() {
   return (
@@ -61,6 +63,10 @@ function Resume() {
                 Next Js
               </span>
               <span className="flex items-center gap-2">
+                <TbBrandReactNative />
+                React Native
+              </span>
+              <span className="flex items-center gap-2">
                 <SiTailwindcss />
                 Tailwind CSS
               </span>
@@ -83,6 +89,10 @@ function Resume() {
               <span className="flex items-center gap-2">
                 <SiScrumalliance />
                 Scrum
+              </span>
+              <span className="flex items-center gap-2">
+                <SiExpo />
+                Expo
               </span>
             </div>
             {/* Languages */}
