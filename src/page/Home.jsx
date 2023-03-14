@@ -22,7 +22,7 @@ function Home() {
               Facundo
             </h2>
             <h1 className="text-6xl font-bold text-white uppercase">Guardia</h1>
-            <p className="text-2xl pl-8 text-gray-500">Frontend Developer</p>
+            <p className="text-2xl pl-8 text-[#09e507]">Frontend Developer</p>
             {/* Buttons */}
             <div className="flex justify-center items-center gap-2 pt-3">
               <Link
@@ -43,9 +43,7 @@ function Home() {
           <div>
             <img
               src={imgHome}
-              alt=""
-              // necesito ajustar el tamaño de la imagen
-
+              alt="Imagen de pantalla con codigo css"
               className="hidden sm:block grayscale opacity-60 w-[760px] object-contain"
             />
           </div>
@@ -54,16 +52,16 @@ function Home() {
         <footer className="flex flex-col lg:flex-row lg:justify-between items-center gap-3">
           <div className="flex gap-3">
             <Link to="https://github.com/facuguardia" target="_blank">
-              <BsGithub className="hover:text-[#09e507]" />
+              <BsGithub className="hover:text-[#09e507] transform hover:scale-125 transition-all" />
             </Link>
             <Link
               to="https://www.linkedin.com/in/facu-guardia/"
               target="_blank"
             >
-              <BsLinkedin className="hover:text-[#09e507]" />
+              <BsLinkedin className="hover:text-[#09e507] transform hover:scale-125 transition-all" />
             </Link>
             <Link to="https://bit.ly/3yxOSR4" target="_blank">
-              <BsWhatsapp className="text-md text-center hover:text-[#09e507]" />
+              <BsWhatsapp className="text-md text-center hover:text-[#09e507] transform hover:scale-125 transition-all" />
             </Link>
           </div>
           {/* Copyrigth */}

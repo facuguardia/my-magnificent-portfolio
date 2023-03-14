@@ -37,7 +37,7 @@ function About() {
             <div className="md:text-center">
               <img
                 src={imgProfile}
-                alt=""
+                alt="Developer trabajando"
                 className="hidden lg:block grayscale border-l-2 m-4"
               />
             </div>
