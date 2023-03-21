@@ -54,7 +54,7 @@ function Projects() {
                   />
                   <div className="px-8 py-10 relative z-10 w-full border-4 border-green-500 bg-gray-900 opacity-0 hover:opacity-100">
                     <h1 className="tracking-widest text-lg title-font font-medium text-green-400 mb-1">
-                      Star Wars App - Challenge
+                      Star Wars App
                     </h1>
                     <p className="leading-relaxed">
                       Aplicacion web que consume la API de Star Wars y muestra
