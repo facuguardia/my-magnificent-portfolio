@@ -1,3 +1,4 @@
+import LazyLoad from "react-lazy-load";
 // Components
 import Navbar from "../components/Navbar";
 import MenuMobile from "../components/MenuMobile";
@@ -32,21 +33,23 @@ function About() {
               </div>
             </div>
             <div className="md:text-center">
-              <img
-                src={imgProfile}
-                alt="Developer trabajando"
-                className="hidden lg:block grayscale border-l-2 m-4"
-              />
+              <LazyLoad once="true">
+                <img
+                  src={imgProfile}
+                  alt="Developer trabajando"
+                  className="hidden lg:block grayscale border-l-2 m-4"
+                />
+              </LazyLoad>
             </div>
           </div>
         </div>
-          {/* Icons */}
-          <div className="md:hidden lg:flex justify-center lg:justify-end lg:pr-[60%] lg:pb-16 text-lg text-center text-gray-500">
-            <h3>
-              <b className="text-white">Facundo Guardia</b>
-              <hr /> Mendoza - Argentina{" "}
-            </h3>
-          </div>
+        {/* Icons */}
+        <div className="md:hidden lg:flex justify-center lg:justify-end lg:pr-[60%] lg:pb-16 text-lg text-center text-gray-500">
+          <h3>
+            <b className="text-white">Facundo Guardia</b>
+            <hr /> Mendoza - Argentina{" "}
+          </h3>
+        </div>
       </div>
     </>
   );

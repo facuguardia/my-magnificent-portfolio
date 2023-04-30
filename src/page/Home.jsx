@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import LazyLoad from "react-lazy-load";
+
 // Components
 import Navbar from "../components/Navbar";
 import MenuMobile from "../components/MenuMobile";
@@ -41,11 +43,13 @@ function Home() {
             </div>
           </div>
           <div>
-            <img
-              src={imgHome}
-              alt="Imagen de pantalla con codigo css"
-              className="hidden sm:block grayscale opacity-60 w-[760px] object-contain"
-            />
+            <LazyLoad once="true">
+              <img
+                src={imgHome}
+                alt="Imagen de pantalla con codigo css"
+                className="hidden sm:block grayscale opacity-60 w-[760px] object-contain"
+              />
+            </LazyLoad>
           </div>
         </div>
         {/* Icons */}
