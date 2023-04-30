@@ -33,7 +33,7 @@ function About() {
               </div>
             </div>
             <div className="md:text-center">
-              <LazyLoad once="true">
+              <LazyLoad once>
                 <img
                   src={imgProfile}
                   alt="Developer trabajando"

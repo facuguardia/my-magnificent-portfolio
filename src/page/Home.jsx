@@ -43,7 +43,7 @@ function Home() {
             </div>
           </div>
           <div>
-            <LazyLoad once="true">
+            <LazyLoad once>
               <img
                 src={imgHome}
                 alt="Imagen de pantalla con codigo css"
