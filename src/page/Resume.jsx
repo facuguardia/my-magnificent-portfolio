@@ -6,7 +6,6 @@ import {
   SiHtml5,
   SiCss3,
   SiJavascript,
-  SiTypescript,
   SiReact,
   SiNextdotjs,
   SiChakraui,
@@ -14,8 +13,10 @@ import {
   SiBootstrap,
   SiTailwindcss,
   SiGithub,
-  SiScrumalliance,
   SiExpo,
+  SiFigma,
+  SiTrello,
+  SiNotion,
 } from "react-icons/si";
 import { FaRunning, FaPlaneDeparture } from "react-icons/fa";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
@@ -37,30 +38,26 @@ function Resume() {
             <h2 className="text-xl font-medium text-white uppercase underline underline-offset-8 decoration-green-500">
               Software Skills
             </h2>
-            <div className="grid grid-cols-2 pt-5 text-xl">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 pt-5 text-lg">
               <span className="flex items-center gap-2">
                 <SiHtml5 />
-                HTML5
+                HTML
               </span>
               <span className="flex items-center gap-2">
                 <SiCss3 />
-                CSS3
+                CSS
               </span>
               <span className="flex items-center gap-2">
                 <SiJavascript />
                 JavaScript
               </span>
               <span className="flex items-center gap-2">
-                <SiTypescript />
-                TypeScript
-              </span>
-              <span className="flex items-center gap-2">
                 <SiReact />
-                React Js
+                ReactJS
               </span>
               <span className="flex items-center gap-2">
                 <SiNextdotjs />
-                Next Js
+                NextJS
               </span>
               <span className="flex items-center gap-2">
                 <TbBrandReactNative />
@@ -68,7 +65,7 @@ function Resume() {
               </span>
               <span className="flex items-center gap-2">
                 <SiTailwindcss />
-                Tailwind CSS
+                Tailwind
               </span>
               <span className="flex items-center gap-2">
                 <SiChakraui />
@@ -80,19 +77,27 @@ function Resume() {
               </span>
               <span className="flex items-center gap-2">
                 <SiBootstrap />
-                Bootstrap CSS
+                Bootstrap
               </span>
               <span className="flex items-center gap-2">
                 <SiGithub />
-                Git and Github
-              </span>
-              <span className="flex items-center gap-2">
-                <SiScrumalliance />
-                Scrum
+                GitHub
               </span>
               <span className="flex items-center gap-2">
                 <SiExpo />
                 Expo
+              </span>
+              <span className="flex items-center gap-2">
+                <SiFigma />
+                Figma
+              </span>
+              <span className="flex items-center gap-2">
+                <SiTrello />
+                Trello
+              </span>
+              <span className="flex items-center gap-2">
+                <SiNotion />
+                Notion
               </span>
             </div>
             {/* Languages */}
@@ -112,7 +117,7 @@ function Resume() {
               <h2 className="text-xl font-medium text-white uppercase underline underline-offset-8 decoration-green-500">
                 Personal Skills
               </h2>
-              <div className="grid grid-cols-1 pt-5 text-center">
+              <div className="grid grid-cols-1 pt-5 text-left">
                 <p className="flex items-center gap-2">
                   Comunicación efectiva - Trabajo en equipo - Adaptabilidad -
                   Solución de problemas - Habilidad para aprender - Atención al
@@ -132,50 +137,41 @@ function Resume() {
                 <li className="mb-10 ml-4">
                   <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                   <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                    Enero 2023 - Presente
+                    Abril 2023
+                  </time>
+                  <h3 className="text-md font-semibold text-gray-900 dark:text-white">
+                    Challenge Personal Pay <br /> (Weather App)
+                  </h3>
+                </li>
+
+                <li className="mb-10 ml-4">
+                  <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                  <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                    Marzo 2023
+                  </time>
+                  <h3 className="text-md font-semibold text-gray-900 dark:text-white">
+                    - Pokedex (React Native) <br />
+                    - Memolloween (React Native) <br />- Tablero Kanban
+                  </h3>
+                </li>
+
+                <li className="mb-10 ml-4">
+                  <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                  <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                    Febrero 2023
+                  </time>
+                  <h3 className="text-md font-semibold text-gray-900 dark:text-white">
+                    Challenge Kairox <br /> (Star Wars App)
+                  </h3>
+                </li>
+
+                <li className="mb-10 ml-4">
+                  <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                  <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                    Enero 2023
                   </time>
                   <h3 className="text-md font-semibold text-gray-900 dark:text-white">
                     App Fast Delivery
-                  </h3>
-                </li>
-
-                <li className="mb-10 ml-4">
-                  <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                    Diciembre 2022
-                  </time>
-                  <h3 className="text-md font-semibold text-gray-900 dark:text-white">
-                    Octocat Search
-                  </h3>
-                </li>
-
-                <li className="mb-10 ml-4">
-                  <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                    Noviembre 2022
-                  </time>
-                  <h3 className="text-md font-semibold text-gray-900 dark:text-white">
-                    Shop Market
-                  </h3>
-                </li>
-
-                <li className="mb-10 ml-4">
-                  <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                    Octubre 2022
-                  </time>
-                  <h3 className="text-md font-semibold text-gray-900 dark:text-white">
-                    Clone Spotify
-                  </h3>
-                </li>
-
-                <li className="mb-10 ml-4">
-                  <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                    Septiembre 2022
-                  </time>
-                  <h3 className="text-md font-semibold text-gray-900 dark:text-white">
-                    Dashboard UI
                   </h3>
                 </li>
               </ol>
@@ -190,7 +186,7 @@ function Resume() {
               </h2>
               <div className="grid grid-cols-1 pt-5">
                 <p className="flex items-center gap-2">
-                  Mi enfoque autodidacta y mis certificaciones de Platzi me
+                  Mi enfoque autodidacta y mis certificaciones me
                   proporcionaron una base sólida en el desarrollo web, como
                   resultado, me siento preparado para enfrentar cualquier
                   desafío como Frontend Developer.
@@ -202,7 +198,7 @@ function Resume() {
               <h2 className="text-xl font-medium text-white uppercase underline underline-offset-8 decoration-green-500">
                 what can i do ?
               </h2>
-              <div className="grid grid-cols-1 pt-5 text-center">
+              <div className="grid grid-cols-1 pt-5 text-left">
                 <p className="flex items-center gap-2">
                   Personal website/portfolio - E-commerce website - Interactive
                   web application - Custom landing page - Blogging or content

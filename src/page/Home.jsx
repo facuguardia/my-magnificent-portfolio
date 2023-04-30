@@ -26,11 +26,11 @@ function Home() {
             {/* Buttons */}
             <div className="flex justify-center items-center gap-2 pt-3">
               <Link
-                to="https://drive.google.com/file/d/1fL6d8vwP-_dKfWrdXTdtyg6J0zrZ-3cy/view?usp=sharing"
+                to="mailto:facuguar12@gmail.com"
                 target="_blank"
                 className="border py-2 px-6 rounded-full hover:border-[#09e507] hover:text-[#09e507]"
               >
-                Currículum
+                Contact me
               </Link>
               <Link
                 to="/projects"
@@ -50,7 +50,7 @@ function Home() {
         </div>
         {/* Icons */}
         <footer className="flex flex-col lg:flex-row lg:justify-between items-center gap-3">
-          <div className="flex gap-3">
+          <div className="flex justify-center items-center gap-3 text-2xl">
             <Link to="https://github.com/facuguardia" target="_blank">
               <BsGithub className="hover:text-[#09e507] transform hover:scale-125 transition-all" />
             </Link>

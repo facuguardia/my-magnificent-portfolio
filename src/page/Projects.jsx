@@ -14,6 +14,9 @@ import ecommerce from "../assets/platzi-app.png";
 import portfolio from "../assets/portfolio.png";
 import starwars from "../assets/starwars.png";
 import pokedex from "../assets/pokedex.png";
+import memo from "../assets/memo-app.png";
+import weather from "../assets/weather.png";
+import kanban from "../assets/kanban.png";
 // Icons
 import {
   SiHtml5,
@@ -30,6 +33,8 @@ import {
   SiWebpack,
   SiFirebase,
   SiExpo,
+  SiGoogleplay,
+  SiVuedotjs,
 } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 
@@ -45,6 +50,110 @@ function Projects() {
           <div className="lg:pt-5 lg:pb-5">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               {/* Card 1 */}
+              <div className="col-span-1 p-4">
+                <div className="relative">
+                  <img
+                    alt="Desktop app My Portfolio"
+                    className="absolute w-full h-full rounded-lg shadow-md"
+                    src={weather}
+                  />
+                  <div className="px-8 py-10 relative z-10 w-full border-4 border-green-500 bg-gray-900 opacity-0 hover:opacity-100">
+                    <h1 className="tracking-widest text-lg title-font font-medium text-green-400 mb-1">
+                      Weather App
+                    </h1>
+                    <p className="leading-relaxed">
+                      Aplicación del clima con React, Vite, TailwindCSS y
+                      OpenWeatherMap API. Challenge de Personal Pay.
+                    </p>
+                    <div className="flex justify-center mt-4 gap-4">
+                      <SiVite className="text-4xl text-green-400" />
+                      <SiReact className="text-4xl text-green-400" />
+                      <SiTailwindcss className="text-4xl text-green-400" />
+                      <Link
+                        to="https://weather-app-pay.netlify.app/"
+                        target="_blank"
+                      >
+                        <SiGooglechrome className="text-4xl text-gray-300 hover:text-gray-600" />
+                      </Link>
+                      <Link
+                        to="https://github.com/facuguardia/weather-app-pay"
+                        target="_blank"
+                      >
+                        <SiGithub className="text-4xl text-gray-300 hover:text-gray-600" />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* Card 2 */}
+              <div className="col-span-1 p-4">
+                <div className="relative">
+                  <img
+                    alt="Desktop app My Portfolio"
+                    className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
+                    src={kanban}
+                  />
+                  <div className="px-8 py-10 relative z-10 w-full border-4 border-green-500 bg-gray-900 opacity-0 hover:opacity-100">
+                    <h1 className="tracking-widest text-lg title-font font-medium text-green-400 mb-1">
+                      Kanban App
+                    </h1>
+                    <p className="leading-relaxed">
+                      Tablero Kanban (drag and drop) con Vue Js y TailwindCSS.
+                      Puedes crear, editar y eliminar tareas.
+                    </p>
+                    <div className="flex justify-center mt-4 gap-4">
+                      <SiVite className="text-4xl text-green-400" />
+                      <SiVuedotjs className="text-4xl text-green-400" />
+                      <SiTailwindcss className="text-4xl text-green-400" />
+                      <Link
+                        to="https://kanban-vue.netlify.app/"
+                        target="_blank"
+                      >
+                        <SiGooglechrome className="text-4xl text-gray-300 hover:text-gray-600" />
+                      </Link>
+                      <Link
+                        to="https://github.com/facuguardia/tablero-kanban"
+                        target="_blank"
+                      >
+                        <SiGithub className="text-4xl text-gray-300 hover:text-gray-600" />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* Card 3 */}
+              <div className="col-span-1 p-4">
+                <div className="relative">
+                  <img
+                    alt="Desktop app My Portfolio"
+                    className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
+                    src={memo}
+                  />
+                  <div className="px-8 py-10 relative z-10 w-full border-4 border-green-500 bg-gray-900 opacity-0 hover:opacity-100">
+                    <h1 className="tracking-widest text-lg title-font font-medium text-green-400 mb-1">
+                      Memolloween App
+                    </h1>
+                    <p className="leading-relaxed">
+                      Juego de memoria para Halloween. Desarrollado con React
+                      Native y Expo. Disponible en APK.
+                    </p>
+                    <div className="flex justify-center mt-4 gap-4">
+                      <TbBrandReactNative className="text-4xl text-green-400" />
+                      <SiExpo className="text-4xl text-green-400" />
+                      <Link to="#" target="_blank">
+                        <SiGoogleplay className="text-4xl text-gray-300 hover:text-gray-600" />
+                      </Link>
+                      <Link
+                        to="https://github.com/facuguardia/memo-app"
+                        target="_blank"
+                      >
+                        <SiGithub className="text-4xl text-gray-300 hover:text-gray-600" />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* Card 4 */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img
@@ -68,13 +177,13 @@ function Projects() {
                         to="https://github.com/facuguardia/challenge-kairox"
                         target="_blank"
                       >
-                        <SiGithub className="text-4xl text-gray-300" />
+                        <SiGithub className="text-4xl text-gray-300 hover:text-gray-600" />
                       </Link>
                     </div>
                   </div>
                 </div>
               </div>
-              {/* Card 2 */}
+              {/* Card 5 */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img
@@ -94,16 +203,22 @@ function Projects() {
                       <TbBrandReactNative className="text-4xl text-green-400" />
                       <SiExpo className="text-4xl text-green-400" />
                       <Link
+                        to="https://expo.dev/artifacts/eas/ebM5DoSsNBgXuV7ytP4Jtu.apk"
+                        target="_blank"
+                      >
+                        <SiGoogleplay className="text-4xl text-gray-300 hover:text-gray-600" />
+                      </Link>
+                      <Link
                         to="https://github.com/facuguardia/pokedex-app"
                         target="_blank"
                       >
-                        <SiGithub className="text-4xl text-gray-300" />
+                        <SiGithub className="text-4xl text-gray-300 hover:text-gray-600" />
                       </Link>
                     </div>
                   </div>
                 </div>
               </div>
-              {/* Card 3 */}
+              {/* Card 6 */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img
@@ -128,19 +243,19 @@ function Projects() {
                         to="https://fastfood-app.netlify.app/"
                         target="_blank"
                       >
-                        <SiGooglechrome className="text-4xl text-gray-300" />
+                        <SiGooglechrome className="text-4xl text-gray-300 hover:text-gray-600" />
                       </Link>
                       <Link
                         to="https://github.com/facuguardia/app-food/tree/develop"
                         target="_blank"
                       >
-                        <SiGithub className="text-4xl text-gray-300" />
+                        <SiGithub className="text-4xl text-gray-300 hover:text-gray-600" />
                       </Link>
                     </div>
                   </div>
                 </div>
               </div>
-              {/* Card 4 */}
+              {/* Card 7 */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img
@@ -166,19 +281,19 @@ function Projects() {
                         to="https://facuguardia.netlify.app/"
                         target="_blank"
                       >
-                        <SiGooglechrome className="text-4xl text-gray-300" />
+                        <SiGooglechrome className="text-4xl text-gray-300 hover:text-gray-600" />
                       </Link>
                       <Link
                         to="https://github.com/facuguardia/my-magnificent-portfolio"
                         target="_blank"
                       >
-                        <SiGithub className="text-4xl text-gray-300" />
+                        <SiGithub className="text-4xl text-gray-300 hover:text-gray-600" />
                       </Link>
                     </div>
                   </div>
                 </div>
               </div>
-              {/* Card 5 */}
+              {/* Card 8 */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img
@@ -203,19 +318,19 @@ function Projects() {
                         to="https://platzi-merch.netlify.app/"
                         target="_blank"
                       >
-                        <SiGooglechrome className="text-4xl text-gray-300" />
+                        <SiGooglechrome className="text-4xl text-gray-300 hover:text-gray-600" />
                       </Link>
                       <Link
                         to="https://github.com/facuguardia/platzi-conf-merch"
                         target="_blank"
                       >
-                        <SiGithub className="text-4xl text-gray-300" />
+                        <SiGithub className="text-4xl text-gray-300 hover:text-gray-600" />
                       </Link>
                     </div>
                   </div>
                 </div>
               </div>
-              {/* Card 6 */}
+              {/* Card 9 */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img
@@ -239,19 +354,19 @@ function Projects() {
                         to="https://octocat-search.netlify.app/"
                         target="_blank"
                       >
-                        <SiGooglechrome className="text-4xl text-gray-300" />
+                        <SiGooglechrome className="text-4xl text-gray-300 hover:text-gray-600" />
                       </Link>
                       <Link
                         to="https://github.com/facuguardia/search-github"
                         target="_blank"
                       >
-                        <SiGithub className="text-4xl text-gray-300" />
+                        <SiGithub className="text-4xl text-gray-300 hover:text-gray-600" />
                       </Link>
                     </div>
                   </div>
                 </div>
               </div>
-              {/* Card 7 */}
+              {/* Card 10 */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img
@@ -275,19 +390,19 @@ function Projects() {
                         to="https://shop-market.netlify.app/"
                         target="_blank"
                       >
-                        <SiGooglechrome className="text-4xl text-gray-300" />
+                        <SiGooglechrome className="text-4xl text-gray-300 hover:text-gray-600" />
                       </Link>
                       <Link
                         to="https://github.com/facuguardia/react-shop"
                         target="_blank"
                       >
-                        <SiGithub className="text-4xl text-gray-300" />
+                        <SiGithub className="text-4xl text-gray-300 hover:text-gray-600" />
                       </Link>
                     </div>
                   </div>
                 </div>
               </div>
-              {/* Card 8 */}
+              {/* Card 11 */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img
@@ -310,19 +425,19 @@ function Projects() {
                         to="https://next13-spotify-ui.netlify.app/"
                         target="_blank"
                       >
-                        <SiGooglechrome className="text-4xl text-gray-300" />
+                        <SiGooglechrome className="text-4xl text-gray-300 hover:text-gray-600" />
                       </Link>
                       <Link
                         to="https://github.com/facuguardia/spotify-next"
                         target="_blank"
                       >
-                        <SiGithub className="text-4xl text-gray-300" />
+                        <SiGithub className="text-4xl text-gray-300 hover:text-gray-600" />
                       </Link>
                     </div>
                   </div>
                 </div>
               </div>
-              {/* Card 9 */}
+              {/* Card 12 */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img
@@ -346,19 +461,19 @@ function Projects() {
                         to="https://tailwind-dash.netlify.app/"
                         target="_blank"
                       >
-                        <SiGooglechrome className="text-4xl text-gray-300" />
+                        <SiGooglechrome className="text-4xl text-gray-300 hover:text-gray-600" />
                       </Link>
                       <Link
                         to="https://github.com/facuguardia/dashboard-react"
                         target="_blank"
                       >
-                        <SiGithub className="text-4xl text-gray-300" />
+                        <SiGithub className="text-4xl text-gray-300 hover:text-gray-600" />
                       </Link>
                     </div>
                   </div>
                 </div>
               </div>
-              {/* Card 10 */}
+              {/* Card 13 */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img
@@ -382,19 +497,19 @@ function Projects() {
                         to="https://messenger-service.netlify.app/"
                         target="_blank"
                       >
-                        <SiGooglechrome className="text-4xl text-gray-300" />
+                        <SiGooglechrome className="text-4xl text-gray-300 hover:text-gray-600" />
                       </Link>
                       <Link
                         to="https://github.com/facuguardia/messenger-service"
                         target="_blank"
                       >
-                        <SiGithub className="text-4xl text-gray-300" />
+                        <SiGithub className="text-4xl text-gray-300 hover:text-gray-600" />
                       </Link>
                     </div>
                   </div>
                 </div>
               </div>
-              {/* Card 11 */}
+              {/* Card 14 */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img
@@ -414,13 +529,13 @@ function Projects() {
                       <SiHtml5 className="text-4xl text-green-400" />
                       <SiCss3 className="text-4xl text-green-400" />
                       <Link to="https://facuguardia.github.io/" target="_blank">
-                        <SiGooglechrome className="text-4xl text-gray-300" />
+                        <SiGooglechrome className="text-4xl text-gray-300 hover:text-gray-600" />
                       </Link>
                       <Link
                         to="https://github.com/facuguardia/facuguardia.github.io"
                         target="_blank"
                       >
-                        <SiGithub className="text-4xl text-gray-300" />
+                        <SiGithub className="text-4xl text-gray-300 hover:text-gray-600" />
                       </Link>
                     </div>
                   </div>
