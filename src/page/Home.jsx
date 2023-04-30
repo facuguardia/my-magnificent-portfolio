@@ -26,7 +26,7 @@ function Home() {
             {/* Buttons */}
             <div className="flex justify-center items-center gap-2 pt-3">
               <Link
-                to="mailto:facuguar12@gmail.com"
+                to="mailto:facuguar12@gmail.com?subject=Contacto%20desde%20webside..."
                 target="_blank"
                 className="border py-2 px-6 rounded-full hover:border-[#09e507] hover:text-[#09e507]"
               >
@@ -66,7 +66,7 @@ function Home() {
           </div>
           {/* Copyrigth */}
           <div>
-            <p className="text-gray-400 text-sm">© 2023 Facundo Guardia</p>
+            <p className="text-gray-400 text-sm">© 2023 Facu Guardia</p>
           </div>
         </footer>
       </div>
