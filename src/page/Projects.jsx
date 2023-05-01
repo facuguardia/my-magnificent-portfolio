@@ -17,6 +17,7 @@ import pokedex from "../assets/pokedex.png";
 import memo from "../assets/memo-app.png";
 import weather from "../assets/weather.png";
 import kanban from "../assets/kanban.png";
+import tienda from "../assets/tienda.png";
 // Icons
 import {
   SiHtml5,
@@ -49,7 +50,43 @@ function Projects() {
         <section>
           <div className="lg:pt-5 lg:pb-5">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-              {/* Card 1 */}
+              {/* Card */}
+              <div className="col-span-1 p-4">
+                <div className="relative">
+                  <img
+                    alt="Desktop app My Portfolio"
+                    className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
+                    src={tienda}
+                  />
+                  <div className="px-8 py-10 relative z-10 w-full border-4 border-green-500 bg-gray-900 opacity-0 hover:opacity-100">
+                    <h1 className="tracking-widest text-lg title-font font-medium text-green-400 mb-1">
+                      E-commerce App
+                    </h1>
+                    <p className="leading-relaxed">
+                      Aplicación de E-commerce con React Native, Expo,
+                      TailwindCSS. Implementado estilos con TWRNC.
+                    </p>
+                    <div className="flex justify-center mt-4 gap-4">
+                      <TbBrandReactNative className="text-4xl text-green-400" />
+                      <SiExpo className="text-4xl text-green-400" />
+                      <SiTailwindcss className="text-4xl text-green-400" />
+                      <Link
+                        to="https://expo.dev/accounts/facuguar12/projects/tienda-app/builds/74a8156c-8ab5-4548-8bca-348d119f7f6d"
+                        target="_blank"
+                      >
+                        <SiGoogleplay className="text-4xl text-gray-300 hover:text-gray-600" />
+                      </Link>
+                      <Link
+                        to="https://github.com/facuguardia/tienda-app"
+                        target="_blank"
+                      >
+                        <SiGithub className="text-4xl text-gray-300 hover:text-gray-600" />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* Card */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img
@@ -85,7 +122,7 @@ function Projects() {
                   </div>
                 </div>
               </div>
-              {/* Card 2 */}
+              {/* Card */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img
@@ -121,7 +158,7 @@ function Projects() {
                   </div>
                 </div>
               </div>
-              {/* Card 3 */}
+              {/* Card */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img
@@ -153,7 +190,7 @@ function Projects() {
                   </div>
                 </div>
               </div>
-              {/* Card 4 */}
+              {/* Card */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img
@@ -183,7 +220,7 @@ function Projects() {
                   </div>
                 </div>
               </div>
-              {/* Card 5 */}
+              {/* Card */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img
@@ -218,7 +255,7 @@ function Projects() {
                   </div>
                 </div>
               </div>
-              {/* Card 6 */}
+              {/* Card */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img
@@ -255,7 +292,7 @@ function Projects() {
                   </div>
                 </div>
               </div>
-              {/* Card 7 */}
+              {/* Card */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img
@@ -293,7 +330,7 @@ function Projects() {
                   </div>
                 </div>
               </div>
-              {/* Card 8 */}
+              {/* Card */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img
@@ -330,7 +367,7 @@ function Projects() {
                   </div>
                 </div>
               </div>
-              {/* Card 9 */}
+              {/* Card */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img
@@ -366,7 +403,7 @@ function Projects() {
                   </div>
                 </div>
               </div>
-              {/* Card 10 */}
+              {/* Card */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img
@@ -402,7 +439,7 @@ function Projects() {
                   </div>
                 </div>
               </div>
-              {/* Card 11 */}
+              {/* Card */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img
@@ -437,7 +474,7 @@ function Projects() {
                   </div>
                 </div>
               </div>
-              {/* Card 12 */}
+              {/* Card */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img
@@ -473,7 +510,7 @@ function Projects() {
                   </div>
                 </div>
               </div>
-              {/* Card 13 */}
+              {/* Card */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img
@@ -509,7 +546,7 @@ function Projects() {
                   </div>
                 </div>
               </div>
-              {/* Card 14 */}
+              {/* Card */}
               <div className="col-span-1 p-4">
                 <div className="relative">
                   <img
