@@ -42,19 +42,19 @@ import { TbBrandReactNative } from "react-icons/tb";
 function Projects() {
   return (
     <>
-      <div>
+      <div relative>
         <MenuMobile />
       </div>
       <div className="w-full h-screen pt-10 pb-4 md:p-4 overflow-y-auto">
         <Navbar />
         <section>
-          <div className="lg:pt-5 lg:pb-5">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
               {/* Card */}
-              <div className="col-span-1 p-4">
+              <div className="col-span-1 p-4 bg-gray-800/70 rounded-md">
                 <div className="relative">
                   <img
-                    alt="Desktop app My Portfolio"
+                    alt="Vista de tres pantallas de la aplicacion de ecommerce creada con React Native"
                     className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                     src={tienda}
                   />
@@ -87,10 +87,10 @@ function Projects() {
                 </div>
               </div>
               {/* Card */}
-              <div className="col-span-1 p-4">
+              <div className="col-span-1 p-4 bg-gray-800/70 rounded-md">
                 <div className="relative">
                   <img
-                    alt="Desktop app My Portfolio"
+                    alt="Vista en desktop de Weather App"
                     className="absolute w-full h-full rounded-lg shadow-md"
                     src={weather}
                   />
@@ -123,10 +123,10 @@ function Projects() {
                 </div>
               </div>
               {/* Card */}
-              <div className="col-span-1 p-4">
+              <div className="col-span-1 p-4 bg-gray-800/70 rounded-md">
                 <div className="relative">
                   <img
-                    alt="Desktop app My Portfolio"
+                    alt="Vista en desktop de Kanban App"
                     className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                     src={kanban}
                   />
@@ -159,10 +159,10 @@ function Projects() {
                 </div>
               </div>
               {/* Card */}
-              <div className="col-span-1 p-4">
+              <div className="col-span-1 p-4 bg-gray-800/70 rounded-md">
                 <div className="relative">
                   <img
-                    alt="Desktop app My Portfolio"
+                    alt="Vista de tres pantallas distintas de la aplicación de Memoria para Halloween creada con React Native"
                     className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                     src={memo}
                   />
@@ -191,10 +191,10 @@ function Projects() {
                 </div>
               </div>
               {/* Card */}
-              <div className="col-span-1 p-4">
+              <div className="col-span-1 p-4 bg-gray-800/70 rounded-md">
                 <div className="relative">
                   <img
-                    alt="Desktop app My Portfolio"
+                    alt="Vista en desktop de la aplicación de Star Wars"
                     className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                     src={starwars}
                   />
@@ -221,10 +221,10 @@ function Projects() {
                 </div>
               </div>
               {/* Card */}
-              <div className="col-span-1 p-4">
+              <div className="col-span-1 p-4 bg-gray-800/70 rounded-md">
                 <div className="relative">
                   <img
-                    alt="Desktop app My Portfolio"
+                    alt="Captura de dos pantallas de la app de Pokemon creada con React Native"
                     className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                     src={pokedex}
                   />
@@ -256,10 +256,10 @@ function Projects() {
                 </div>
               </div>
               {/* Card */}
-              <div className="col-span-1 p-4">
+              <div className="col-span-1 p-4 bg-gray-800/70 rounded-md">
                 <div className="relative">
                   <img
-                    alt="Desktop app My Portfolio"
+                    alt="Vista en desktop de la aplicación de Fast Food App Deliveri"
                     className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                     src={foodApp}
                   />
@@ -293,10 +293,10 @@ function Projects() {
                 </div>
               </div>
               {/* Card */}
-              <div className="col-span-1 p-4">
+              <div className="col-span-1 p-4 bg-gray-800/70 rounded-md">
                 <div className="relative">
                   <img
-                    alt="Desktop app My Portfolio"
+                    alt="Vista en desktop de mi portafolio web"
                     className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                     src={portfolio}
                   />
@@ -331,10 +331,10 @@ function Projects() {
                 </div>
               </div>
               {/* Card */}
-              <div className="col-span-1 p-4">
+              <div className="col-span-1 p-4 bg-gray-800/70 rounded-md">
                 <div className="relative">
                   <img
-                    alt="Desktop app My Portfolio"
+                    alt="Vista en desktop de la aplicación de Ecommerce Platzi App"
                     className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                     src={ecommerce}
                   />
@@ -368,10 +368,10 @@ function Projects() {
                 </div>
               </div>
               {/* Card */}
-              <div className="col-span-1 p-4">
+              <div className="col-span-1 p-4 bg-gray-800/70 rounded-md">
                 <div className="relative">
                   <img
-                    alt="Desktop app Octocat Search"
+                    alt="Vista en desktop de la app de búsqueda de perfiles de GitHub"
                     className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                     src={octocat}
                   />
@@ -404,10 +404,10 @@ function Projects() {
                 </div>
               </div>
               {/* Card */}
-              <div className="col-span-1 p-4">
+              <div className="col-span-1 p-4 bg-gray-800/70 rounded-md">
                 <div className="relative">
                   <img
-                    alt="Desktop app Shop Market"
+                    alt="Vista en desktop de la app de shop market"
                     className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                     src={shopMarket}
                   />
@@ -440,10 +440,10 @@ function Projects() {
                 </div>
               </div>
               {/* Card */}
-              <div className="col-span-1 p-4">
+              <div className="col-span-1 p-4 bg-gray-800/70 rounded-md">
                 <div className="relative">
                   <img
-                    alt="Desktop app Clone Spotify"
+                    alt="Vista en desktop de la ui de spotify"
                     className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                     src={spotify}
                   />
@@ -475,10 +475,10 @@ function Projects() {
                 </div>
               </div>
               {/* Card */}
-              <div className="col-span-1 p-4">
+              <div className="col-span-1 p-4 bg-gray-800/70 rounded-md">
                 <div className="relative">
                   <img
-                    alt="Desktop app Dashboard UI"
+                    alt="Vista en desktop de la ui de dashboard"
                     className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                     src={dashboard}
                   />
@@ -511,10 +511,10 @@ function Projects() {
                 </div>
               </div>
               {/* Card */}
-              <div className="col-span-1 p-4">
+              <div className="col-span-1 p-4 bg-gray-800/70 rounded-md">
                 <div className="relative">
                   <img
-                    alt="Desktop app Messenger Service UI"
+                    alt="Vista en desktop de la ui de messenger"
                     className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                     src={message}
                   />
@@ -547,10 +547,10 @@ function Projects() {
                 </div>
               </div>
               {/* Card */}
-              <div className="col-span-1 p-4">
+              <div className="col-span-1 p-4 bg-gray-800/70 rounded-md">
                 <div className="relative">
                   <img
-                    alt="Desktop app My Portfolio"
+                    alt="Vista en desktop de mi primer portafolio"
                     className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                     src={portafolio}
                   />
