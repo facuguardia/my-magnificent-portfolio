@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 function Navbar() {
   return (
     // Container
-    <div className="hidden w-full rounded-lg md:flex justify-center md:justify-end items-center p-4">
+    <div className="hidden w-full rounded-lg md:flex justify-center md:justify-end items-center p-2">
       <nav className="md:col-span-8 flex items-center gap-4">
         {/* Items 1 */}
         <NavLink
