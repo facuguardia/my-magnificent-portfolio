@@ -45,7 +45,7 @@ function Projects() {
       <div relative>
         <MenuMobile />
       </div>
-      <div className="w-full h-screen pt-10 pb-4 md:p-4 overflow-y-auto">
+      <div className="w-auto h-full pt-10 pb-4 md:p-2 overflow-y-auto">
         <Navbar />
         <section>
           <div>

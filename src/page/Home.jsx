@@ -1,11 +1,7 @@
 import { Link } from "react-router-dom";
-import LazyLoad from "react-lazy-load";
-
 // Components
 import Navbar from "../components/Navbar";
 import MenuMobile from "../components/MenuMobile";
-// Images
-import imgHome from "../assets/home.jpg";
 // icons
 import { BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs";
 
@@ -15,64 +11,56 @@ function Home() {
       <div>
         <MenuMobile />
       </div>
-      <div className="w-auto h-screen md:min-h-screen flex flex-col justify-between p-4 md:pb-8 lg:pb-4">
+      <div className="bg-hero-pattern bg-cover bg-center w-auto h-full md:min-h-screen flex flex-col justify-between p-2">
         {/* Navbar */}
         <Navbar />
-        <div className="flex justify-center items-center md:ml-16 pt-64 md:pt-0">
+        <div className="flex justify-center items-center w-auto h-screen">
           <div>
-            <h2 className="text-3xl font-medium text-gray- uppercase">
-              Facundo
-            </h2>
-            <h1 className="text-6xl font-bold text-white uppercase">Guardia</h1>
-            <p className="text-2xl pl-8 text-[#09e507]">Frontend Developer</p>
+            <div>
+              <h2 className="flex flex-row items-end gap-6 text-4xl lg:text-4xl font-pop text-gray-300 uppercase shadow-lg">
+                Facundo
+                <span className="w-96 h-1 bg-[#09e507] rounded-full"></span>
+              </h2>
+            </div>
+            <div>
+              <h1 className="text-6xl lg:text-9xl font-pop font-bold text-gray-100 uppercase">
+                Guardia
+              </h1>
+            </div>
+            <div className="flex justify-end">
+              <p className="text-2xl lg:text-3xl text-[#09e507] font-pop">
+                Frontend Developer
+              </p>
+            </div>
             {/* Buttons */}
-            <div className="flex justify-center items-center gap-2 pt-3">
+            <div className="flex flex-row justify-center lg:justify-end items-center gap-2 lg:gap-4 pt-5">
               <Link
                 to="mailto:facuguar12@gmail.com?subject=Contacto%20desde%20webside..."
                 target="_blank"
-                className="border py-2 px-6 rounded-full hover:border-[#09e507] hover:text-[#09e507]"
+                className="border py-2 px-6 rounded-full hover:border-[#09e507] hover:text-[#09e507] transform hover:scale-110 transition-all duration-300"
               >
-                Contacto
+                <strong>Contacto</strong>
               </Link>
               <Link
                 to="/projects"
-                className="border py-2 px-6 rounded-full hover:border-[#09e507] hover:text-[#09e507]"
+                className="border py-2 px-6 rounded-full hover:border-[#09e507] hover:text-[#09e507] transform hover:scale-110 transition-all duration-300"
               >
-                Proyectos
+                <strong>Proyectos</strong>
               </Link>
             </div>
           </div>
-          <div>
-            <LazyLoad once>
-              <img
-                src={imgHome}
-                alt="Imagen de pantalla con codigo css"
-                className="hidden sm:block grayscale opacity-60 w-[760px] object-contain"
-              />
-            </LazyLoad>
-          </div>
         </div>
-        {/* Icons */}
-        <footer className="flex flex-col lg:flex-row lg:justify-between items-center gap-3">
-          <div className="flex justify-center items-center gap-3 text-2xl">
-            <Link to="https://github.com/facuguardia" target="_blank">
-              <BsGithub className="hover:text-[#09e507] transform hover:scale-125 transition-all" />
-            </Link>
-            <Link
-              to="https://www.linkedin.com/in/facu-guardia/"
-              target="_blank"
-            >
-              <BsLinkedin className="hover:text-[#09e507] transform hover:scale-125 transition-all" />
-            </Link>
-            <Link to="https://bit.ly/3yxOSR4" target="_blank">
-              <BsWhatsapp className="text-md text-center hover:text-[#09e507] transform hover:scale-125 transition-all" />
-            </Link>
-          </div>
-          {/* Copyrigth */}
-          <div>
-            <p className="text-gray-400 text-sm">© 2023 Facu Guardia</p>
-          </div>
-        </footer>
+        <div className="flex justify-center gap-4 text-2xl pb-2">
+          <Link to="https://github.com/facuguardia" target="_blank">
+            <BsGithub className="hover:text-[#09e507] transform hover:scale-125 transition-all duration-300" />
+          </Link>
+          <Link to="https://www.linkedin.com/in/facu-guardia/" target="_blank">
+            <BsLinkedin className="hover:text-[#09e507] transform hover:scale-125 transition-all duration-300" />
+          </Link>
+          <Link to="https://bit.ly/3yxOSR4" target="_blank">
+            <BsWhatsapp className="text-md text-center hover:text-[#09e507] transform hover:scale-125 transition-all duration-300" />
+          </Link>
+        </div>
       </div>
     </>
   );

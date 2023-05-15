@@ -7,9 +7,8 @@ function MenuMobile() {
   const [menu, setMenu] = useState(false);
 
   return (
-    // Container
     <div
-      className={`lg:hidden bg-black bg-opacity-90 fixed flex justify-center  w-[100%] h-full z-50 transition-all duration-300 ${
+      className={`lg:hidden bg-black bg-opacity-90 fixed flex justify-center w-[100%] h-full z-50 transition-all duration-500 ${
         menu ? "top-0" : "-top-full"
       }`}
     >
@@ -54,7 +53,7 @@ function MenuMobile() {
       {/* Button Mobile */}
       <button
         onClick={() => setMenu(!menu)}
-        className="md:hidden fixed right-4 top-4 text-xl bg-black/80 p-2.5 rounded-full text-[#09e507] z-50"
+        className="lg:hidden fixed right-4 top-4 text-xl bg-black/80 p-2.5 rounded-full text-[#09e507] z-50"
       >
         {menu ? <RiCloseFill /> : <RiMenu3Fill />}
       </button>
