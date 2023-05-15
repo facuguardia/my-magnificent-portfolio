@@ -29,7 +29,7 @@ function Resume() {
       <div>
         <MenuMobile />
       </div>
-      <div className="w-auto h-full p-2 lg:pl-5 lg:pr-3 overflow-y-auto lg:overflow-y-hidden">
+      <div className="w-auto h-full p-3 overflow-y-auto lg:overflow-y-hidden">
         <Navbar />
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
           {/* Columna 1 */}

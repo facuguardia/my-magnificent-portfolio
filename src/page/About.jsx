@@ -11,12 +11,12 @@ function About() {
       <div>
         <MenuMobile />
       </div>
-      <div className="w-auto h-full flex flex-col justify-center md:justify-between overflow-y-hidden p-2">
+      <div className="w-auto h-full flex flex-col justify-center lg:justify-between overflow-hidden p-3">
         <Navbar />
-        <div className="w-auto h-screen flex flex-col lg:flex-row justify-center items-center lg:text-start">
-          <div className="flex flex-col text-center lg:flex-row justify-center items-center lg:pl-20  pt-10 md:pt-0">
-            <div className="pr-3">
-              <h1 className="ttext-center lg:text-left text-4xl font-medium text-gray-100 underline underline-offset-8 decoration-green-500 pb-5">
+        <div className="w-auto h-screen flex flex-col justify-center items-center">
+          <div className="flex flex-col lg:flex-row justify-center items-cente gap-4">
+            <div className="flex flex-col justify-center gap-2 lg:pl-5">
+              <h1 className="text-center lg:text-left text-4xl font-medium text-gray-100 underline underline-offset-8 decoration-green-500 pb-5">
                 About me
               </h1>
               <div className="text-center lg:text-left">
@@ -34,8 +34,17 @@ function About() {
                   digitales al siguiente nivel!
                 </p>
               </div>
+              <div className="flex justify-center lg:justify-end items-center pt-10 text-lg text-center text-gray-500">
+                <h3>
+                  <b className="text-gray-100 underline underline-offset-8 decoration-green-500">
+                    Facundo Guardia
+                  </b>{" "}
+                  <br /> <p>Mendoza - Argentina</p>
+                </h3>
+              </div>
             </div>
-            <div className="md:text-center">
+            {/* Image */}
+            <div className="lg:text-center">
               <LazyLoad once>
                 <img
                   src={imgProfile}
@@ -45,15 +54,6 @@ function About() {
               </LazyLoad>
             </div>
           </div>
-        </div>
-        {/* Icons */}
-        <div className="flex justify-center lg:justify-end lg:pr-[60%] lg:pb-16 text-lg text-center text-gray-500">
-          <h3>
-            <b className="text-gray-100 underline underline-offset-8 decoration-green-500">
-              Facundo Guardia
-            </b>{" "}
-            <br /> <p>Mendoza - Argentina</p>
-          </h3>
         </div>
       </div>
     </>

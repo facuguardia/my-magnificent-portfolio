@@ -45,11 +45,11 @@ function Projects() {
       <div relative>
         <MenuMobile />
       </div>
-      <div className="w-auto h-full pt-10 pb-4 md:p-2 overflow-y-auto">
+      <div className="w-auto h-full pt-2 pb-2 md:p-3 overflow-y-auto">
         <Navbar />
         <section>
           <div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 pt-3">
               {/* Card */}
               <div className="col-span-1 p-4 bg-gray-800/70 rounded-md">
                 <div className="relative">
