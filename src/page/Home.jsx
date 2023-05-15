@@ -11,7 +11,8 @@ function Home() {
       <div>
         <MenuMobile />
       </div>
-      <div className="bg-hero-pattern bg-cover bg-center w-auto h-full flex flex-col justify-center md:justify-between overflow-y-hidden p-3">
+      <div
+      className="bg-[url('images/fondo-bg.png')] bg-cover bg-center w-auto h-full flex flex-col justify-center md:justify-between overflow-y-hidden p-3">
         {/* Navbar */}
         <Navbar />
         <div className="w-auto h-full flex justify-center items-center text-center">
