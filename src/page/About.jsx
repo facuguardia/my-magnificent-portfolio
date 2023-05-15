@@ -3,7 +3,7 @@ import LazyLoad from "react-lazy-load";
 import Navbar from "../components/Navbar";
 import MenuMobile from "../components/MenuMobile";
 // Images
-import imgProfile from "../assets/profile.jpg";
+import imgProfile from "../../public/images/profile.jpg";
 
 function About() {
   return (

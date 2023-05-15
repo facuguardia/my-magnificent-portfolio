@@ -3,21 +3,21 @@ import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import MenuMobile from "../components/MenuMobile";
 // Images
-import octocat from "../assets/octocat.png";
-import shopMarket from "../assets/shop-market.png";
-import spotify from "../assets/spotify.png";
-import dashboard from "../assets/dashboard.png";
-import portafolio from "../assets/portafolio.png";
-import message from "../assets/message.png";
-import foodApp from "../assets/food-desktop.png";
-import ecommerce from "../assets/platzi-app.png";
-import portfolio from "../assets/portfolio.png";
-import starwars from "../assets/starwars.png";
-import pokedex from "../assets/pokedex.png";
-import memo from "../assets/memo-app.png";
-import weather from "../assets/weather.png";
-import kanban from "../assets/kanban.png";
-import tienda from "../assets/tienda.png";
+import octocat from "../../public/images/octocat.png";
+import shopMarket from "../../public/images/shop-market.png";
+import spotify from "../../public/images/spotify.png";
+import dashboard from "../../public/images/dashboard.png";
+import portafolio from "../../public/images/portafolio.png";
+import message from "../../public/images/message.png";
+import foodApp from "../../public/images/food-desktop.png";
+import ecommerce from "../../public/images/platzi-app.png";
+import portfolio from "../../public/images/portfolio.png";
+import starwars from "../../public/images/starwars.png";
+import pokedex from "../../public/images/pokedex.png";
+import memo from "../../public/images/memo-app.png";
+import weather from "../../public/images/weather.png";
+import kanban from "../../public/images/kanban.png";
+import tienda from "../../public/images/tienda.png";
 // Icons
 import {
   SiHtml5,

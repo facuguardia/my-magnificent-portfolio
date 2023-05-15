@@ -19,7 +19,7 @@ function MenuMobile() {
           className="w-[90%] h-auto flex justify-center border-b-[1px] border-gray-500 px-4 py-3 text-white hover:text-green-500"
         >
           <span className="text-2xl font-medium flex items-center gap-3">
-            Home
+            Inicio
           </span>
         </NavLink>
         {/* Items 2 */}
@@ -28,7 +28,7 @@ function MenuMobile() {
           className="w-[90%] h-auto flex justify-center items-center gap-3 border-b-[1px] border-gray-500 px-4 py-3 text-white hover:text-green-500"
         >
           <span className="text-2xl font-medium flex items-center gap-3">
-            About
+            Acerca
           </span>
         </NavLink>
         {/* Items 3 */}
@@ -37,7 +37,7 @@ function MenuMobile() {
           className="w-[90%] h-auto flex justify-center items-center gap-3 border-b-[1px] border-gray-500 px-4 py-3 text-white hover:text-green-500"
         >
           <span className="text-2xl font-medium flex items-center gap-3">
-            Resume
+            Currículum
           </span>
         </NavLink>
         {/* Items 4 */}
@@ -46,7 +46,7 @@ function MenuMobile() {
           className="w-[90%] h-auto flex justify-center items-center gap-3 px-4 py-3 text-white hover:text-green-500"
         >
           <span className="text-2xl font-medium flex items-center gap-3">
-            Projects
+            Proyectos
           </span>
         </NavLink>
       </nav>
