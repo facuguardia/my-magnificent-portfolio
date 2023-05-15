@@ -16,19 +16,19 @@ function About() {
         <div className="w-auto h-screen flex flex-col lg:flex-row justify-center items-center lg:text-start">
           <div className="flex flex-col text-center lg:flex-row justify-center items-center lg:pl-20  pt-10 md:pt-0">
             <div className="pr-3">
-              <h1 className="ttext-center lg:text-left text-4xl font-medium text-white uppercase underline underline-offset-8 decoration-green-500 pb-5">
-                About
+              <h1 className="ttext-center lg:text-left text-4xl font-medium text-white underline underline-offset-8 decoration-green-500 pb-5">
+                About me
               </h1>
               <div className="text-center lg:text-left">
                 <p className="text-xl text-gray-300">
-                  Soy <b>Developer Frontend</b> altamente capacitado en una
-                  amplia variedad de tecnologías. Me apasiona crear soluciones
-                  digitales elegantes y efectivas que superen las expectativas
-                  de mis clientes. Como autodidacta apasionado, estoy siempre
-                  actualizado en las últimas tendencias y tecnologías de
-                  desarrollo web, lo que me permite ofrecer a mis clientes
-                  soluciones innovadoras y creativas que los ayudan a destacar
-                  en el mercado.
+                  Soy un <strong className="text-green-500">desarrollador</strong>  junior con pasión por el <strong className="text-green-500">frontend</strong> y la
+                  creación de soluciones digitales impactantes. Estoy al tanto
+                  de las últimas tendencias y tecnologías, las aplico de
+                  manera innovadora para ayudar a tus clientes a destacar. Con
+                  energía positiva, perseverancia y habilidad para trabajar en
+                  equipo, estoy listo para aportar mi entusiasmo y talento a tu
+                  proyecto. <br /> <br /> ¡Juntos, llevaremos tus soluciones digitales al
+                  siguiente nivel!
                 </p>
               </div>
             </div>

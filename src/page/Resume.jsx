@@ -103,7 +103,7 @@ function Resume() {
             {/* Languages */}
             <div className="pt-5">
               <h2 className="text-xl font-medium text-white uppercase underline underline-offset-8 decoration-green-500">
-                Languages
+                Idiomas
               </h2>
               <div className="grid grid-cols-1 pt-5">
                 <span className="flex items-center gap-2">Inglés (B1)</span>
@@ -130,7 +130,7 @@ function Resume() {
           <div className="col-span-1 md:pt-2 md:pl-5 lg:pl-0">
             {/* Experience */}
             <h2 className="text-xl lg:pl-24 font-medium text-white uppercase underline underline-offset-8 decoration-green-500">
-              Experience
+              Experiencia
             </h2>
             <div className="pt-5 lg:pl-24">
               <ol className="relative border-l border-gray-200 dark:border-gray-700">
@@ -182,21 +182,21 @@ function Resume() {
             {/* Educacion */}
             <div>
               <h2 className="text-xl font-medium text-white uppercase underline underline-offset-8 decoration-green-500">
-                Education
+                Educación
               </h2>
               <div className="grid grid-cols-1 pt-5">
                 <p className="flex items-center gap-2">
-                  Mi enfoque autodidacta y mis certificaciones me
-                  proporcionaron una base sólida en el desarrollo web, como
-                  resultado, me siento preparado para enfrentar cualquier
-                  desafío como Frontend Developer.
+                  Mi enfoque autodidacta y mis certificaciones me proporcionaron
+                  una base sólida en el desarrollo web, como resultado, me
+                  siento preparado para enfrentar cualquier desafío como
+                  Frontend Developer.
                 </p>
               </div>
             </div>
             {/* what can i do ? */}
             <div className="pt-5">
               <h2 className="text-xl font-medium text-white uppercase underline underline-offset-8 decoration-green-500">
-                what can i do ?
+                ¿ Que puedo hacer ?
               </h2>
               <div className="grid grid-cols-1 pt-5 text-left">
                 <p className="flex items-center gap-2">
@@ -210,7 +210,7 @@ function Resume() {
             {/* Hobbies & Interests */}
             <div className="pt-5">
               <h2 className="text-xl font-medium text-white uppercase underline underline-offset-8 decoration-green-500">
-                Hobbies & Interests
+                Hobbies & pastimes
               </h2>
               <div className="pt-5 flex justify-center items-center gap-4">
                 <div className="flex flex-col items-center">

@@ -32,13 +32,13 @@ function Home() {
                 target="_blank"
                 className="border py-2 px-6 rounded-full hover:border-[#09e507] hover:text-[#09e507]"
               >
-                Contact me
+                Contacto
               </Link>
               <Link
                 to="/projects"
                 className="border py-2 px-6 rounded-full hover:border-[#09e507] hover:text-[#09e507]"
               >
-                Projects
+                Proyectos
               </Link>
             </div>
           </div>

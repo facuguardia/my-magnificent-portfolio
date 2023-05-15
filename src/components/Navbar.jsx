@@ -10,28 +10,28 @@ function Navbar() {
           to="/"
           className="xl:py-1 xl:px-2 rounded-lg hover:text-[#09e507] transform hover:scale-125 transition-all"
         >
-          Home
+          Inicio
         </NavLink>
         {/* Items 2 */}
         <NavLink
           to="/about"
           className="xl:py-1 xl:px-2 rounded-lg hover:text-[#09e507] transform hover:scale-125 transition-all"
         >
-          About
+          Acerca
         </NavLink>
         {/* Items 3 */}
         <NavLink
           to="/Resume"
           className="xl:py-1 xl:px-2 rounded-lg hover:text-[#09e507] transform hover:scale-125 transition-all"
         >
-          Resume
+          Currículum
         </NavLink>
         {/* Items 4 */}
         <NavLink
           to="/projects"
           className="xl:py-1 xl:px-2 rounded-lg hover:text-[#09e507] transform hover:scale-125 transition-all"
         >
-          Projects
+          Proyectos
         </NavLink>
       </nav>
     </div>
