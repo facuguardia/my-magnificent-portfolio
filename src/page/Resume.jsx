@@ -200,10 +200,7 @@ function Resume() {
               </h2>
               <div className="grid grid-cols-1 pt-5 text-left">
                 <p className="flex items-center gap-2">
-                  Personal website/portfolio - E-commerce website - Interactive
-                  web application - Custom landing page - Blogging or content
-                  publishing platform - Effective marketing landing page -
-                  Interactive data visualization tool
+                  Personal website/portfolio - E-commerce website - Aplicación web interactiva - Custom landing page - Plataforma de blogs o publicación de contenido - Herramienta interactiva de visualización de datos - Aplicación web de una sola página
                 </p>
               </div>
             </div>

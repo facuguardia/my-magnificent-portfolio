@@ -21,10 +21,7 @@ function About() {
               </h1>
               <div className="text-center lg:text-left">
                 <p className="text-xl text-gray-300">
-                  Soy un{" "}
-                  <strong className="text-green-500">desarrollador</strong>{" "}
-                  junior con pasión por el{" "}
-                  <strong className="text-green-500">frontend</strong> y la
+                  Soy un desarrollador junior con pasión por el frontend y la
                   creación de soluciones digitales impactantes. Estoy al tanto
                   de las últimas tendencias y tecnologías, las aplico de manera
                   innovadora para ayudar a tus clientes a destacar. Con energía
