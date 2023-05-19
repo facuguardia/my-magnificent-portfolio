@@ -65,8 +65,7 @@ function Projects() {
                       Nike Card 3D
                     </h1>
                     <p className="leading-relaxed">
-                      Practicando animaciones 3D con Tailwind y Framer Motion.
-                      Esta practica fue inspirada en un video de Youtube.
+                      Practicando animaciones 3D. Click y movimientos del mouse para ver la animación.
                     </p>
                     <div className="flex justify-center mt-4 gap-4">
                       <SiReact className="text-4xl text-green-400" />
