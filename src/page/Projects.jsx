@@ -65,7 +65,7 @@ function Projects() {
                       Nike Card 3D
                     </h1>
                     <p className="leading-relaxed">
-                      Practicando animaciones 3D con Tailwind y Frame Motion.
+                      Practicando animaciones 3D con Tailwind y Framer Motion.
                       Esta practica fue inspirada en un video de Youtube.
                     </p>
                     <div className="flex justify-center mt-4 gap-4">
