@@ -3,21 +3,22 @@ import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import MenuMobile from "../components/MenuMobile";
 // Images
-import octocat from "../../public/images/octocat.png";
-import shopMarket from "../../public/images/shop-market.png";
-import spotify from "../../public/images/spotify.png";
-import dashboard from "../../public/images/dashboard.png";
-import portafolio from "../../public/images/portafolio.png";
-import message from "../../public/images/message.png";
-import foodApp from "../../public/images/food-desktop.png";
-import ecommerce from "../../public/images/platzi-app.png";
-import portfolio from "../../public/images/portfolio.png";
-import starwars from "../../public/images/starwars.png";
-import pokedex from "../../public/images/pokedex.png";
-import memo from "../../public/images/memo-app.png";
-import weather from "../../public/images/weather.png";
-import kanban from "../../public/images/kanban.png";
-import tienda from "../../public/images/tienda.png";
+import octocat from "/images/octocat.png";
+import shopMarket from "/images/shop-market.png";
+import spotify from "/images/spotify.png";
+import dashboard from "/images/dashboard.png";
+import portafolio from "/images/portafolio.png";
+import message from "/images/message.png";
+import foodApp from "/images/food-desktop.png";
+import ecommerce from "/images/platzi-app.png";
+import portfolio from "/images/portfolio.png";
+import starwars from "/images/starwars.png";
+import pokedex from "/images/pokedex.png";
+import memo from "/images/memo-app.png";
+import weather from "/images/weather.png";
+import kanban from "/images/kanban.png";
+import tienda from "/images/tienda.png";
+import card3D from "/images/card-3d.png";
 // Icons
 import {
   SiHtml5,
@@ -36,6 +37,7 @@ import {
   SiExpo,
   SiGoogleplay,
   SiVuedotjs,
+  SiFramer,
 } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 
@@ -50,6 +52,39 @@ function Projects() {
         <section>
           <div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 pt-3">
+              {/* Card */}
+              <div className="col-span-1 p-4 bg-gray-800/70 rounded-md">
+                <div className="relative">
+                  <img
+                    alt="Vista de tres pantallas de la aplicacion de ecommerce creada con React Native"
+                    className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
+                    src={card3D}
+                  />
+                  <div className="px-8 py-10 relative z-10 w-full border-4 border-green-500 bg-gray-900 opacity-0 hover:opacity-100">
+                    <h1 className="tracking-widest text-lg title-font font-medium text-green-400 mb-1">
+                      Nike Card 3D
+                    </h1>
+                    <p className="leading-relaxed">
+                      Practicando animaciones 3D con Tailwind y Frame Motion.
+                      Esta practica fue inspirada en un video de Youtube.
+                    </p>
+                    <div className="flex justify-center mt-4 gap-4">
+                      <SiReact className="text-4xl text-green-400" />
+                      <SiTailwindcss className="text-4xl text-green-400" />
+                      <SiFramer className="text-4xl text-green-400" />
+                      <Link to="https://nike-3d.netlify.app/" target="_blank">
+                        <SiGooglechrome className="text-4xl text-gray-300 hover:text-gray-600" />
+                      </Link>
+                      <Link
+                        to="https://github.com/facuguardia/card-3d"
+                        target="_blank"
+                      >
+                        <SiGithub className="text-4xl text-gray-300 hover:text-gray-600" />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
               {/* Card */}
               <div className="col-span-1 p-4 bg-gray-800/70 rounded-md">
                 <div className="relative">
@@ -305,9 +340,8 @@ function Projects() {
                       Portfolio Web
                     </h1>
                     <p className="leading-relaxed">
-                      Este es mi portafolio web busca ser una página web
-                      minimalista y elegante, 100% responsive. Toda la info en
-                      un solo lugar.
+                      Portafolio web creado con React, Tailwind CSS, Frame
+                      Motion, React Icons y Router Dom
                     </p>
                     <div className="flex justify-center mt-4 gap-4">
                       <SiVite className="text-4xl text-green-400" />
@@ -523,8 +557,8 @@ function Projects() {
                       Messenger Service UI
                     </h1>
                     <p className="leading-relaxed">
-                      Interfaz de usuario de un chat. Realizada con responsive
-                      design. Se replicó un diseño de la página uistore.org
+                      Messenger Service UI es una interfaz de usuario de un
+                      servicio de mensajería. Realizada con responsive design.
                     </p>
                     <div className="flex justify-center mt-4 gap-4">
                       <SiVite className="text-4xl text-green-400" />
