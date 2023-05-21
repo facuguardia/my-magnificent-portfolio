@@ -10,8 +10,8 @@ function Navbar() {
           to="/"
           className={({ isActive }) =>
             isActive
-              ? "text-[#09e507]"
-              : "xl:py-1 xl:px-2 rounded-lg hover:text-[#09e507] transform hover:scale-125 transition-all duration-500"
+              ? "text-[#09e507] font-medium"
+              : "xl:py-1 xl:px-2 rounded-lg hover:text-[#09e507] font-medium transform hover:scale-125 transition-all duration-500"
           }
         >
           Inicio
@@ -21,8 +21,8 @@ function Navbar() {
           to="/about"
           className={({ isActive }) =>
             isActive
-              ? "text-[#09e507]"
-              : "xl:py-1 xl:px-2 rounded-lg hover:text-[#09e507] transform hover:scale-125 transition-all duration-500"
+              ? "text-[#09e507] font-medium"
+              : "xl:py-1 xl:px-2 rounded-lg hover:text-[#09e507] font-medium transform hover:scale-125 transition-all duration-500"
           }
         >
           Acerca
@@ -32,8 +32,8 @@ function Navbar() {
           to="/Resume"
           className={({ isActive }) =>
             isActive
-              ? "text-[#09e507]"
-              : "xl:py-1 xl:px-2 rounded-lg hover:text-[#09e507] transform hover:scale-125 transition-all duration-500"
+              ? "text-[#09e507] font-medium"
+              : "xl:py-1 xl:px-2 rounded-lg hover:text-[#09e507] font-medium transform hover:scale-125 transition-all duration-500"
           }
         >
           Currículum
@@ -43,8 +43,8 @@ function Navbar() {
           to="/projects"
           className={({ isActive }) =>
             isActive
-              ? "text-[#09e507]"
-              : "xl:py-1 xl:px-2 rounded-lg hover:text-[#09e507] transform hover:scale-125 transition-all duration-500"
+              ? "text-[#09e507] font-medium"
+              : "xl:py-1 xl:px-2 rounded-lg hover:text-[#09e507] font-medium transform hover:scale-125 transition-all duration-500"
           }
         >
           Proyectos

@@ -12,6 +12,7 @@ import {
   SiMaterialui,
   SiBootstrap,
   SiTailwindcss,
+  SiFramer,
   SiGithub,
   SiExpo,
   SiFigma,
@@ -66,6 +67,10 @@ function Resume() {
               <span className="flex items-center gap-2">
                 <SiTailwindcss />
                 Tailwind
+              </span>
+              <span className="flex items-center gap-2">
+                <SiFramer />
+                Motion
               </span>
               <span className="flex items-center gap-2">
                 <SiChakraui />
@@ -200,7 +205,10 @@ function Resume() {
               </h2>
               <div className="grid grid-cols-1 pt-5 text-left">
                 <p className="flex items-center gap-2">
-                  Personal website/portfolio - E-commerce website - Aplicación web interactiva - Custom landing page - Plataforma de blogs o publicación de contenido - Herramienta interactiva de visualización de datos - Aplicación web de una sola página
+                  Personal website/portfolio - E-commerce website - Aplicación
+                  web interactiva - Custom landing page - Plataforma de blogs o
+                  publicación de contenido - Herramienta interactiva de
+                  visualización de datos - Aplicación web de una sola página
                 </p>
               </div>
             </div>
