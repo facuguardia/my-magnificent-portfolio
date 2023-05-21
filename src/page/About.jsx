@@ -6,8 +6,6 @@ import imgProfile from "/images/img-about.png";
 import { motion } from "framer-motion";
 
 function About() {
-
-
   const typingContainer = {
     hidden: { opacity: 0 },
     show: {
@@ -34,8 +32,8 @@ function About() {
       </div>
       <div className="w-auto h-full flex flex-col justify-center lg:justify-between overflow-hidden p-3">
         <Navbar />
-        <div className="w-auto h-screen flex justify-center items-center gap-10">
-          <div className="flex flex-col justify-center gap-3 lg:pl-5 lg:w-[50%]">
+        <div className="lg:w-full lg:h-screen lg:flex lg:justify-center lg:items-center lg:gap-10">
+          <div className="flex flex-col justify-center gap-3 lg:w-[50%]">
             <motion.h1
               className="text-center lg:text-left text-4xl font-medium text-gray-100 underline underline-offset-8 decoration-green-500 pb-5"
               variants={typingContainer}
@@ -60,31 +58,33 @@ function About() {
                 siguiente nivel...
               </p>
             </div>
-            <div className="flex flex-col lg:items-end pt-10 text-lg text-center text-gray-500">
-              <motion.h3
-                className="text-gray-100 underline underline-offset-8 decoration-green-500"
-                variants={typingContainer}
-                initial="hidden"
-                animate="show"
-              >
-                {Array.from("Facundo Guardia").map((word, i) => (
-                  <motion.span key={i} variants={typingText}>
-                    {word}
-                  </motion.span>
-                ))}
-              </motion.h3>
-              <motion.p
-                className="text"
-                variants={typingContainer}
-                initial="hidden"
-                animate="show"
-              >
-                {Array.from("Mendoza - Argentina").map((word, i) => (
-                  <motion.span key={i} variants={typingText}>
-                    {word}
-                  </motion.span>
-                ))}
-              </motion.p>
+            <div className="flex flex-col lg:items-end mt-10 text-lg text-gray-500">
+              <div className="flex flex-col justify-center items-center">
+                {" "}
+                <motion.h3
+                  className="text-gray-100 border-b border-green-500 "
+                  variants={typingContainer}
+                  initial="hidden"
+                  animate="show"
+                >
+                  {Array.from("Facundo Guardia").map((word, i) => (
+                    <motion.span key={i} variants={typingText}>
+                      {word}
+                    </motion.span>
+                  ))}
+                </motion.h3>
+                <motion.p
+                  variants={typingContainer}
+                  initial="hidden"
+                  animate="show"
+                >
+                  {Array.from("Mendoza - Argentina").map((word, i) => (
+                    <motion.span key={i} variants={typingText}>
+                      {word}
+                    </motion.span>
+                  ))}
+                </motion.p>
+              </div>
             </div>
           </div>
           {/* Image */}

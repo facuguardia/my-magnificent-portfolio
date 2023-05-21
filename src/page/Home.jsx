@@ -79,9 +79,9 @@ function Home() {
                 <Link
                   to="mailto:facuguar12@gmail.com?subject=Contacto%20desde%20webside..."
                   target="_blank"
-                  className="border py-2 px-6 rounded-full hover:border-[#09e507] hover:text-[#09e507] transform hover:scale-110 transition-all duration-300"
+                  className="bg-black border py-2 px-6 rounded-full hover:border-[#09e507] text-[#09e507] font-medium transform hover:scale-110 transition-all duration-300 shadow-gray-400 shadow-md"
                 >
-                  <strong>Contacto</strong>
+                  Contacto
                 </Link>
               </motion.div>
               <motion.div
@@ -96,9 +96,9 @@ function Home() {
               >
                 <Link
                   to="/projects"
-                  className="border py-2 px-6 rounded-full hover:border-[#09e507] hover:text-[#09e507] transform hover:scale-110 transition-all duration-300"
+                  className="bg-black border py-2 px-6 rounded-full hover:border-[#09e507] text-[#09e507] font-medium transform hover:scale-110 transition-all duration-300 shadow-gray-400 shadow-md "
                 >
-                  <strong>Proyectos</strong>
+                  Proyectos
                 </Link>
               </motion.div>
             </div>

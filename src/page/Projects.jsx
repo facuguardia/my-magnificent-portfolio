@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 // Components
 import Navbar from "../components/Navbar";
 import MenuMobile from "../components/MenuMobile";
@@ -42,6 +43,21 @@ import {
 import { TbBrandReactNative } from "react-icons/tb";
 
 function Projects() {
+  const imgProduct1 = {
+    hidden: {
+      opacity: 0,
+      y: "400px",
+    },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+        delay: 0.10,
+        ease: "easeInOut",
+      },
+    },
+  };
   return (
     <>
       <div relative>
@@ -51,21 +67,27 @@ function Projects() {
         <Navbar />
         <section>
           <div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 pt-3">
+            <motion.div
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 p-3"
+              variants={imgProduct1}
+              initial="hidden"
+              animate="show"
+            >
               {/* Card */}
-              <div className="col-span-1 p-4 bg-gray-800/70 rounded-md">
+              <div className="col-span-1 p-4 bg-gray-800/70 rounded-md w-auto h-auto">
                 <div className="relative">
                   <img
-                    alt="Vista de tres pantallas de la aplicacion de ecommerce creada con React Native"
-                    className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                     src={card3D}
+                    alt="imagen descriptiva de la aplicación"
+                    className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                   />
                   <div className="px-8 py-10 relative z-10 w-full border-4 border-green-500 bg-gray-900 opacity-0 hover:opacity-100">
                     <h1 className="tracking-widest text-lg title-font font-medium text-green-400 mb-1">
                       Nike Card 3D
                     </h1>
                     <p className="leading-relaxed">
-                      Practicando animaciones 3D. Click y movimientos del mouse para ver la animación.
+                      Practicando animaciones 3D. Click y movimientos del mouse
+                      para ver la animación.
                     </p>
                     <div className="flex justify-center mt-4 gap-4">
                       <SiReact className="text-4xl text-green-400" />
@@ -88,9 +110,9 @@ function Projects() {
               <div className="col-span-1 p-4 bg-gray-800/70 rounded-md">
                 <div className="relative">
                   <img
-                    alt="Vista de tres pantallas de la aplicacion de ecommerce creada con React Native"
-                    className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                     src={tienda}
+                    alt="imagen descriptiva de la aplicación"
+                    className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                   />
                   <div className="px-8 py-10 relative z-10 w-full border-4 border-green-500 bg-gray-900 opacity-0 hover:opacity-100">
                     <h1 className="tracking-widest text-lg title-font font-medium text-green-400 mb-1">
@@ -124,9 +146,9 @@ function Projects() {
               <div className="col-span-1 p-4 bg-gray-800/70 rounded-md">
                 <div className="relative">
                   <img
-                    alt="Vista en desktop de Weather App"
-                    className="absolute w-full h-full rounded-lg shadow-md"
                     src={weather}
+                    alt="imagen descriptiva de la aplicación"
+                    className="absolute w-full h-full rounded-lg shadow-md"
                   />
                   <div className="px-8 py-10 relative z-10 w-full border-4 border-green-500 bg-gray-900 opacity-0 hover:opacity-100">
                     <h1 className="tracking-widest text-lg title-font font-medium text-green-400 mb-1">
@@ -160,9 +182,9 @@ function Projects() {
               <div className="col-span-1 p-4 bg-gray-800/70 rounded-md">
                 <div className="relative">
                   <img
-                    alt="Vista en desktop de Kanban App"
-                    className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                     src={kanban}
+                    alt="imagen descriptiva de la aplicación"
+                    className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                   />
                   <div className="px-8 py-10 relative z-10 w-full border-4 border-green-500 bg-gray-900 opacity-0 hover:opacity-100">
                     <h1 className="tracking-widest text-lg title-font font-medium text-green-400 mb-1">
@@ -196,9 +218,9 @@ function Projects() {
               <div className="col-span-1 p-4 bg-gray-800/70 rounded-md">
                 <div className="relative">
                   <img
-                    alt="Vista de tres pantallas distintas de la aplicación de Memoria para Halloween creada con React Native"
-                    className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                     src={memo}
+                    alt="imagen descriptiva de la aplicación"
+                    className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                   />
                   <div className="px-8 py-10 relative z-10 w-full border-4 border-green-500 bg-gray-900 opacity-0 hover:opacity-100">
                     <h1 className="tracking-widest text-lg title-font font-medium text-green-400 mb-1">
@@ -228,9 +250,9 @@ function Projects() {
               <div className="col-span-1 p-4 bg-gray-800/70 rounded-md">
                 <div className="relative">
                   <img
-                    alt="Vista en desktop de la aplicación de Star Wars"
-                    className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                     src={starwars}
+                    alt="imagen descriptiva de la aplicación"
+                    className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                   />
                   <div className="px-8 py-10 relative z-10 w-full border-4 border-green-500 bg-gray-900 opacity-0 hover:opacity-100">
                     <h1 className="tracking-widest text-lg title-font font-medium text-green-400 mb-1">
@@ -258,9 +280,9 @@ function Projects() {
               <div className="col-span-1 p-4 bg-gray-800/70 rounded-md">
                 <div className="relative">
                   <img
-                    alt="Captura de dos pantallas de la app de Pokemon creada con React Native"
-                    className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                     src={pokedex}
+                    alt="imagen descriptiva de la aplicación"
+                    className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                   />
                   <div className="px-8 py-10 relative z-10 w-full border-4 border-green-500 bg-gray-900 opacity-0 hover:opacity-100">
                     <h1 className="tracking-widest text-lg title-font font-medium text-green-400 mb-1">
@@ -293,9 +315,9 @@ function Projects() {
               <div className="col-span-1 p-4 bg-gray-800/70 rounded-md">
                 <div className="relative">
                   <img
-                    alt="Vista en desktop de la aplicación de Fast Food App Deliveri"
-                    className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                     src={foodApp}
+                    alt="imagen descriptiva de la aplicación"
+                    className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                   />
                   <div className="px-8 py-10 relative z-10 w-full border-4 border-green-500 bg-gray-900 opacity-0 hover:opacity-100">
                     <h1 className="tracking-widest text-lg title-font font-medium text-green-400 mb-1">
@@ -330,9 +352,9 @@ function Projects() {
               <div className="col-span-1 p-4 bg-gray-800/70 rounded-md">
                 <div className="relative">
                   <img
-                    alt="Vista en desktop de mi portafolio web"
-                    className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                     src={portfolio}
+                    alt="imagen descriptiva de la aplicación"
+                    className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                   />
                   <div className="px-8 py-10 relative z-10 w-full border-4 border-green-500 bg-gray-900 opacity-0 hover:opacity-100">
                     <h1 className="tracking-widest text-lg title-font font-medium text-green-400 mb-1">
@@ -367,9 +389,9 @@ function Projects() {
               <div className="col-span-1 p-4 bg-gray-800/70 rounded-md">
                 <div className="relative">
                   <img
-                    alt="Vista en desktop de la aplicación de Ecommerce Platzi App"
-                    className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                     src={ecommerce}
+                    alt="imagen descriptiva de la aplicación"
+                    className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                   />
                   <div className="px-8 py-10 relative z-10 w-full border-4 border-green-500 bg-gray-900 opacity-0 hover:opacity-100">
                     <h1 className="tracking-widest text-lg title-font font-medium text-green-400 mb-1">
@@ -404,9 +426,9 @@ function Projects() {
               <div className="col-span-1 p-4 bg-gray-800/70 rounded-md">
                 <div className="relative">
                   <img
-                    alt="Vista en desktop de la app de búsqueda de perfiles de GitHub"
-                    className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                     src={octocat}
+                    alt="imagen descriptiva de la aplicación"
+                    className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                   />
                   <div className="px-8 py-10 relative z-10 w-full border-4 border-green-500 bg-gray-900 opacity-0 hover:opacity-100">
                     <h1 className="tracking-widest text-lg title-font font-medium text-green-400 mb-1">
@@ -440,9 +462,9 @@ function Projects() {
               <div className="col-span-1 p-4 bg-gray-800/70 rounded-md">
                 <div className="relative">
                   <img
-                    alt="Vista en desktop de la app de shop market"
-                    className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                     src={shopMarket}
+                    alt="imagen descriptiva de la aplicación"
+                    className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                   />
                   <div className="px-8 py-10 relative z-10 w-full border-4 border-green-500 bg-gray-900 opacity-0 hover:opacity-100">
                     <h1 className="tracking-widest text-lg title-font font-medium text-green-400 mb-1">
@@ -476,9 +498,9 @@ function Projects() {
               <div className="col-span-1 p-4 bg-gray-800/70 rounded-md">
                 <div className="relative">
                   <img
-                    alt="Vista en desktop de la ui de spotify"
-                    className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                     src={spotify}
+                    alt="imagen descriptiva de la aplicación"
+                    className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                   />
                   <div className="px-8 py-10 relative z-10 w-full border-4 border-green-500 bg-gray-900 opacity-0 hover:opacity-100">
                     <h1 className="tracking-widest text-lg title-font font-medium text-green-400 mb-1">
@@ -511,9 +533,9 @@ function Projects() {
               <div className="col-span-1 p-4 bg-gray-800/70 rounded-md">
                 <div className="relative">
                   <img
-                    alt="Vista en desktop de la ui de dashboard"
-                    className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                     src={dashboard}
+                    alt="imagen descriptiva de la aplicación"
+                    className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                   />
                   <div className="px-8 py-10 relative z-10 w-full border-4 border-green-500 bg-gray-900 opacity-0 hover:opacity-100">
                     <h1 className="tracking-widest text-lg title-font font-medium text-green-400 mb-1 ">
@@ -547,9 +569,9 @@ function Projects() {
               <div className="col-span-1 p-4 bg-gray-800/70 rounded-md">
                 <div className="relative">
                   <img
-                    alt="Vista en desktop de la ui de messenger"
-                    className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                     src={message}
+                    alt="imagen descriptiva de la aplicación"
+                    className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                   />
                   <div className="px-8 py-10 relative z-10 w-full border-4 border-green-500 bg-gray-900 opacity-0 hover:opacity-100">
                     <h1 className="tracking-widest text-lg title-font font-medium text-green-400 mb-1">
@@ -583,9 +605,9 @@ function Projects() {
               <div className="col-span-1 p-4 bg-gray-800/70 rounded-md">
                 <div className="relative">
                   <img
-                    alt="Vista en desktop de mi primer portafolio"
-                    className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                     src={portafolio}
+                    alt="imagen descriptiva de la aplicación"
+                    className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                   />
                   <div className="px-8 py-10 relative z-10 w-full border-4 border-green-500 bg-gray-900 opacity-0 hover:opacity-100">
                     <h1 className="tracking-widest text-lg title-font font-medium text-green-400 mb-1">
@@ -611,7 +633,7 @@ function Projects() {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </section>
       </div>

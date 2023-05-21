@@ -16,7 +16,7 @@ function MenuMobile() {
         {/* Items 1 */}
         <NavLink
           to="/"
-          className="w-[90%] h-auto flex justify-center border-b-[1px] border-gray-500 px-4 py-3 text-white hover:text-green-500"
+          className="w-[90%] h-auto flex justify-center border-b-[1px] border-green-500 px-4 py-3 text-white hover:text-green-500"
         >
           <span className="text-2xl font-medium flex items-center gap-3">
             Inicio
@@ -25,7 +25,7 @@ function MenuMobile() {
         {/* Items 2 */}
         <NavLink
           to="/about"
-          className="w-[90%] h-auto flex justify-center items-center gap-3 border-b-[1px] border-gray-500 px-4 py-3 text-white hover:text-green-500"
+          className="w-[90%] h-auto flex justify-center items-center gap-3 border-b-[1px] border-green-500 px-4 py-3 text-white hover:text-green-500"
         >
           <span className="text-2xl font-medium flex items-center gap-3">
             Acerca
@@ -34,7 +34,7 @@ function MenuMobile() {
         {/* Items 3 */}
         <NavLink
           to="/resume"
-          className="w-[90%] h-auto flex justify-center items-center gap-3 border-b-[1px] border-gray-500 px-4 py-3 text-white hover:text-green-500"
+          className="w-[90%] h-auto flex justify-center items-center gap-3 border-b-[1px] border-green-500 px-4 py-3 text-white hover:text-green-500"
         >
           <span className="text-2xl font-medium flex items-center gap-3">
             Currículum
