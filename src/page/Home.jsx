@@ -8,6 +8,13 @@ import { BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs";
 import { motion } from "framer-motion";
 
 function Home() {
+  const animacionBoton = {
+    scale: [1, 1.2, 1],
+    transition: {
+      duration: 0.5,
+      yoyo: Infinity,
+    },
+  };
   return (
     <>
       <div>
@@ -67,6 +74,7 @@ function Home() {
             {/* Buttons */}
             <div className="flex flex-row justify-center lg:justify-end items-center gap-2 lg:gap-4 pt-5">
               <motion.div
+                whileHover={animacionBoton}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5 }}
@@ -79,12 +87,13 @@ function Home() {
                 <Link
                   to="mailto:facuguar12@gmail.com?subject=Contacto%20desde%20webside..."
                   target="_blank"
-                  className="bg-black border py-2 px-6 rounded-full hover:border-[#09e507] text-[#09e507] font-medium transform hover:scale-110 transition-all duration-300 shadow-gray-400 shadow-md"
+                  className="bg-black border py-2 px-6 rounded-full  text-[#09e507] font-medium transform hover:scale-110 transition-all duration-300 shadow-gray-400 shadow-md"
                 >
                   Contacto
                 </Link>
               </motion.div>
               <motion.div
+                whileHover={animacionBoton}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5 }}
@@ -96,7 +105,7 @@ function Home() {
               >
                 <Link
                   to="/projects"
-                  className="bg-black border py-2 px-6 rounded-full hover:border-[#09e507] text-[#09e507] font-medium transform hover:scale-110 transition-all duration-300 shadow-gray-400 shadow-md "
+                  className="bg-black border py-2 px-6 rounded-full text-[#09e507] font-medium transform hover:scale-110 transition-all duration-300 shadow-gray-400 shadow-md "
                 >
                   Proyectos
                 </Link>

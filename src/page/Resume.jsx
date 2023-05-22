@@ -24,6 +24,9 @@ import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { CiBeerMugFull } from "react-icons/ci";
 import { TbBrandReactNative } from "react-icons/tb";
 
+// Framer Motion
+import { motion } from "framer-motion";
+
 function Resume() {
   return (
     <>
@@ -34,7 +37,17 @@ function Resume() {
         <Navbar />
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
           {/* Columna 1 */}
-          <div className="col-span-1 pt-2">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delay: 0.6, duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: 50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+            className="col-span-1 pt-2"
+          >
             {/* Software Skills */}
             <h2 className="text-xl font-medium text-white uppercase underline underline-offset-8 decoration-green-500">
               Software Skills
@@ -130,9 +143,19 @@ function Resume() {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
           {/* Columna 2 */}
-          <div className="col-span-1 md:pt-2 md:pl-5 lg:pl-0">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delay: 0.4, duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: 50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+            className="col-span-1 md:pt-2 md:pl-5 lg:pl-0"
+          >
             {/* Experience */}
             <h2 className="text-xl lg:pl-24 font-medium text-white uppercase underline underline-offset-8 decoration-green-500">
               Experiencia
@@ -181,9 +204,19 @@ function Resume() {
                 </li>
               </ol>
             </div>
-          </div>
+          </motion.div>
           {/* Columna 3 */}
-          <div className="col-span-1 lg:pl-5 lg:pt-2">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: 50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+            className="col-span-1 lg:pl-5 lg:pt-2"
+          >
             {/* Educacion */}
             <div>
               <h2 className="text-xl font-medium text-white uppercase underline underline-offset-8 decoration-green-500">
@@ -239,7 +272,7 @@ function Resume() {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </>
