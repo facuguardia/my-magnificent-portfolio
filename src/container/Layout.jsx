@@ -4,11 +4,11 @@ import MenuMobile from '../components/MenuMobile'
 
 function Layout({ children }) {
   return (
-    <div>
+    <>
       <Navbar />
       <MenuMobile />
       {children}
-    </div>
+    </>
   )
 }
 

@@ -25,7 +25,6 @@ import { motion } from "framer-motion";
 
 function Resume() {
   return (
-    <>
       <div className="w-auto h-screen">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
           {/* Column 1 */}
@@ -268,7 +267,6 @@ function Resume() {
           </motion.div>
         </div>
       </div>
-    </>
   );
 }
 

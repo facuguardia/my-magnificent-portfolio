@@ -56,7 +56,6 @@ function Projects() {
     },
   };
   return (
-    <>
       <div className="w-auto h-screen">
         <section>
           <div>
@@ -630,7 +629,6 @@ function Projects() {
           </div>
         </section>
       </div>
-    </>
   );
 }
 
