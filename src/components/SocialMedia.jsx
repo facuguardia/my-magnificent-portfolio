@@ -1,9 +1,8 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs";
 
-function Footer() {
+function SocialMedia() {
   return (
       <motion.div
         initial="hidden"
@@ -14,7 +13,7 @@ function Footer() {
           hidden: { opacity: 0, y: -50 },
           visible: { opacity: 1, y: 0 },
         }}
-        className="flex justify-center items-center gap-4 text-2xl p-3"
+        className="flex justify-center lg:justify-end items-center gap-6 text-2xl lg:text-3xl mt-8"
       >
         <Link to="https://github.com/facuguardia" target="_blank">
           <BsGithub className="hover:text-[#09e507] transform hover:scale-125 transition-all duration-300" />
@@ -29,4 +28,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default SocialMedia;
