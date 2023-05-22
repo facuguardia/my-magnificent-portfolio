@@ -1,8 +1,5 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-// Components
-import Navbar from "../components/Navbar";
-import MenuMobile from "../components/MenuMobile";
 // Images
 import octocat from "/images/octocat.png";
 import shopMarket from "/images/shop-market.png";
@@ -60,11 +57,7 @@ function Projects() {
   };
   return (
     <>
-      <div relative>
-        <MenuMobile />
-      </div>
-      <div className="w-auto h-full pt-2 pb-2 md:p-3 overflow-y-auto">
-        <Navbar />
+      <div className="w-auto h-screen">
         <section>
           <div>
             <motion.div
@@ -81,7 +74,7 @@ function Projects() {
                     alt="imagen descriptiva de la aplicación"
                     className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
                   />
-                  <div className="px-8 py-10 relative z-10 w-full border-4 border-green-500 bg-gray-900 opacity-0 hover:opacity-100">
+                  <div className="px-8 py-10 relative z-10 w-full border-4 border-green-500 bg-gray-900 opacity-0 hover:opacity-100 cursor-pointer">
                     <h1 className="tracking-widest text-lg title-font font-medium text-green-400 mb-1">
                       Nike Card 3D
                     </h1>

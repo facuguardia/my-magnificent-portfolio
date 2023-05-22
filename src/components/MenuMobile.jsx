@@ -6,6 +6,10 @@ import { RiMenu3Fill, RiCloseFill } from "react-icons/ri";
 function MenuMobile() {
   const [menu, setMenu] = useState(false);
 
+  const closeMenu = () => {
+    setMenu(false);
+  };
+
   return (
     <div
       className={`lg:hidden bg-black bg-opacity-90 fixed flex justify-center w-[100%] h-full z-50 transition-all duration-500 ${
@@ -17,6 +21,7 @@ function MenuMobile() {
         <NavLink
           to="/"
           className="w-[90%] h-auto flex justify-center border-b-[1px] border-green-500 px-4 py-3 text-white hover:text-green-500"
+          onClick={closeMenu}
         >
           <span className="text-2xl font-medium flex items-center gap-3">
             Inicio
@@ -26,6 +31,7 @@ function MenuMobile() {
         <NavLink
           to="/about"
           className="w-[90%] h-auto flex justify-center items-center gap-3 border-b-[1px] border-green-500 px-4 py-3 text-white hover:text-green-500"
+          onClick={closeMenu}
         >
           <span className="text-2xl font-medium flex items-center gap-3">
             Acerca
@@ -35,6 +41,7 @@ function MenuMobile() {
         <NavLink
           to="/resume"
           className="w-[90%] h-auto flex justify-center items-center gap-3 border-b-[1px] border-green-500 px-4 py-3 text-white hover:text-green-500"
+          onClick={closeMenu}
         >
           <span className="text-2xl font-medium flex items-center gap-3">
             Currículum
@@ -44,6 +51,7 @@ function MenuMobile() {
         <NavLink
           to="/projects"
           className="w-[90%] h-auto flex justify-center items-center gap-3 px-4 py-3 text-white hover:text-green-500"
+          onClick={closeMenu}
         >
           <span className="text-2xl font-medium flex items-center gap-3">
             Proyectos

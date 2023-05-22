@@ -1,7 +1,3 @@
-// Components
-import Navbar from "../components/Navbar";
-import MenuMobile from "../components/MenuMobile";
-// Icons
 import {
   SiHtml5,
   SiCss3,
@@ -30,13 +26,9 @@ import { motion } from "framer-motion";
 function Resume() {
   return (
     <>
-      <div>
-        <MenuMobile />
-      </div>
-      <div className="w-auto h-full p-3 overflow-y-auto lg:overflow-y-hidden">
-        <Navbar />
+      <div className="w-auto h-screen">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
-          {/* Columna 1 */}
+          {/* Column 1 */}
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -144,7 +136,7 @@ function Resume() {
               </div>
             </div>
           </motion.div>
-          {/* Columna 2 */}
+          {/* Column 2 */}
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -205,7 +197,7 @@ function Resume() {
               </ol>
             </div>
           </motion.div>
-          {/* Columna 3 */}
+          {/* Column 3 */}
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -217,7 +209,7 @@ function Resume() {
             }}
             className="col-span-1 lg:pl-5 lg:pt-2"
           >
-            {/* Educacion */}
+            {/* Education */}
             <div>
               <h2 className="text-xl font-medium text-white uppercase underline underline-offset-8 decoration-green-500">
                 Educación
@@ -231,7 +223,7 @@ function Resume() {
                 </p>
               </div>
             </div>
-            {/* what can i do ? */}
+            {/* What I can do */}
             <div className="pt-5">
               <h2 className="text-xl font-medium text-white uppercase underline underline-offset-8 decoration-green-500">
                 ¿ Que puedo hacer ?
@@ -251,21 +243,22 @@ function Resume() {
                 Hobbies & pastimes
               </h2>
               <div className="pt-5 flex lg:justify-center items-center gap-4">
+                {/* Icon1  */}
                 <div className="flex flex-col items-center">
                   <FaRunning className="border rounded-full text-6xl p-2" />
                   Correr
                 </div>
-
+                {/* Icon2 */}
                 <div className="flex flex-col items-center">
                   <FaPlaneDeparture className="border rounded-full text-6xl p-2" />
                   Viajar
                 </div>
-
+                {/* Icon3 */}
                 <div className="flex flex-col items-center">
                   <AiOutlineFundProjectionScreen className="border rounded-full text-6xl p-2" />
                   Proyectos
                 </div>
-
+                {/* Icon4 */}
                 <div className="flex flex-col items-center">
                   <CiBeerMugFull className="border rounded-full text-6xl p-2" />
                   Relax

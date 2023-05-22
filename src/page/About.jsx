@@ -1,7 +1,3 @@
-// Components
-import Navbar from "../components/Navbar";
-import MenuMobile from "../components/MenuMobile";
-// Images
 import imgProfile from "/images/img-about.png";
 import { motion } from "framer-motion";
 
@@ -26,13 +22,8 @@ function About() {
     },
   };
   return (
-    <>
-      <div>
-        <MenuMobile />
-      </div>
-      <div className="w-auto h-full flex flex-col justify-center lg:justify-between overflow-hidden p-3">
-        <Navbar />
-        <div className="lg:w-full lg:h-screen lg:flex lg:justify-center lg:items-center lg:gap-10">
+      <div className="w-auto h-screen flex flex-col justify-center lg:justify-between">
+        <div className="lg:w-auto lg:h-screen lg:flex lg:justify-center lg:items-center lg:gap-10">
           <div className="flex flex-col justify-center gap-3 lg:w-[50%]">
             <motion.h1
               className="text-center lg:text-left text-4xl font-medium text-gray-100 underline underline-offset-8 decoration-green-500 pb-5"
@@ -106,7 +97,6 @@ function About() {
           </div>
         </div>
       </div>
-    </>
   );
 }
 

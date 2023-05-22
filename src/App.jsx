@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import Layout from "./container/Layout";
 // Pages
 import Home from "./page/Home";
 import About from "./page/About";
@@ -9,7 +10,8 @@ import NotFound from "./page/NotFound";
 
 function App() {
   return (
-    <div className="bg-[#0a0a0a] text-gray-300 h-screen box-border">
+    <div className="bg-[#0a0a0a] text-gray-300 h-screen box-border overflow-scroll p-4">
+      <Layout />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
