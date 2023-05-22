@@ -55,6 +55,7 @@ function Home() {
           </div>
           {/* Buttons */}
           <Buttons />
+          {/* Social media */}
           <SocialMedia />
         </div>
       </div>
