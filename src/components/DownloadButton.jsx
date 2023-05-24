@@ -5,7 +5,7 @@ function DownloadButton() {
     <a
       href="/images/cv-frontend.pdf"
       download="CV-Facundo-Guardia.pdf"
-      className="bg-green-500 hover:bg-green-600 text-gray-100 font-bold py-2 px-4 rounded inline-flex items-center"
+      className="w-52 h-16 bg-black text-green-500 hover:text-green-700 border-2 border-green-500 hover:border-green-700 font-bold py-2 px-4 rounded-full inline-flex items-center animate-bounce"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
