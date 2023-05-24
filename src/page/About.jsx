@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import imgProfile from "/images/img-about.png";
 import DownloadButton from "../components/DownloadButton";
+import VideoButton from "../components/VideoButton";
 
 function About() {
   const typingContainer = {
@@ -59,7 +60,8 @@ function About() {
             aportar mi entusiasmo y talento a tu proyecto. <br /> <br /> Juntos,
             llevaremos tus soluciones digitales al siguiente nivel...
             {/* Download Button */}
-            <div className="flex justify-center lg:justify-start mt-10">
+            <div className="flex flex-col md:flex-row justify-center lg:justify-start mt-10 items-center gap-8">
+              <VideoButton />
               <DownloadButton />
             </div>
           </motion.div>
