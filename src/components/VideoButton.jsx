@@ -12,10 +12,10 @@ function VideoButton() {
     <>
       <button
         onClick={toggleModal}
-        className="w-52 h-16 block text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-full px-4 py-2 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+        className="block text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-full px-4 py-2 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
         type="button"
       >
-        Conoceme mejor
+        Conoceme...
       </button>
       {modalVisible && (
         <div
@@ -46,7 +46,6 @@ function VideoButton() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <span className="sr-only">Close modal</span>
               </button>
               <VideoAbout />
             </div>

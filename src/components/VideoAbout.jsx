@@ -12,7 +12,7 @@ function YouTubeVideo() {
       player = new window.YT.Player("youtube-player", {
         videoId: "7I_CAxJ0RiA",
         playerVars: {
-          autoplay: 0,
+          autoplay: 1,
           playsinline: 1,
           controls: 1,
           showinfo: 0,
