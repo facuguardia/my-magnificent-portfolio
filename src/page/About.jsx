@@ -24,7 +24,7 @@ function About() {
     },
   };
   return (
-    <div className="w-auto h-screen flex flex-col justify-center lg:justify-between">
+    <div className="w-auto h-screen p-4 flex flex-col justify-center lg:justify-between">
       <div className="lg:w-auto lg:h-screen lg:flex lg:justify-center lg:items-center lg:gap-10">
         {/* Text */}
         <div className="flex flex-col justify-center gap-3 lg:w-[50%]">

@@ -56,11 +56,11 @@ function Projects() {
     },
   };
   return (
-      <div className="w-auto h-screen">
+      <div className="w-auto h-screen p-4">
         <section>
           <div>
             <motion.div
-              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 p-3"
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3"
               variants={imgProduct1}
               initial="hidden"
               animate="show"

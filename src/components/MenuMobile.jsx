@@ -12,7 +12,7 @@ function MenuMobile() {
 
   return (
     <div
-      className={`lg:hidden bg-black bg-opacity-90 fixed flex justify-center w-[100%] h-full z-50 transition-all duration-500 ${
+      className={`lg:hidden bg-black bg-opacity-90 fixed flex justify-center items-center w-full h-full z-50 transition-all duration-500 ${
         menu ? "top-0" : "-top-full"
       }`}
     >
