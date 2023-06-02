@@ -22,7 +22,6 @@ import { FaRunning, FaPlaneDeparture, FaMinus } from "react-icons/fa";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { TbBrandReactNative } from "react-icons/tb";
 
-
 // Framer Motion
 import { motion } from "framer-motion";
 
@@ -130,7 +129,7 @@ function Resume() {
               Español (Nativo)
             </span>
             <span className="flex items-center gap-2 pb-2">
-            <FaMinus className="text-green-500" />
+              <FaMinus className="text-green-500" />
               Inglés (B1)
             </span>
           </div>
@@ -156,10 +155,20 @@ function Resume() {
               <li className="mb-5 ml-4">
                 <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                 <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                  Junio 2023
+                </time>
+                <h3 className="text-md font-semibold text-gray-900 dark:text-white">
+                  Developer Frontend en Myfuture-AI
+                </h3>
+              </li>
+
+              <li className="mb-5 ml-4">
+                <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                   Mayo 2023
                 </time>
                 <h3 className="text-md font-semibold text-gray-900 dark:text-white">
-                  Proyectos con Flutter 
+                  Proyectos con Flutter
                 </h3>
               </li>
 
@@ -191,16 +200,6 @@ function Resume() {
                 </time>
                 <h3 className="text-md font-semibold text-gray-900 dark:text-white">
                   Challenge Kairox <br /> (Star Wars App)
-                </h3>
-              </li>
-
-              <li className="mb-10 ml-4">
-                <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                  Enero 2023
-                </time>
-                <h3 className="text-md font-semibold text-gray-900 dark:text-white">
-                  App Fast Delivery
                 </h3>
               </li>
             </ol>
