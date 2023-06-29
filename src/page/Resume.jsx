@@ -223,11 +223,7 @@ function Resume() {
           </h2>
           <div className="grid grid-cols-1 pt-5 mb-5">
             <p className="flex items-center gap-2">
-              Mi enfoque autodidacta y mis certificaciones me proporcionaron una
-              base sólida en el desarrollo web, como resultado, me siento
-              preparado para enfrentar cualquier desafío como Frontend
-              Developer.
-            </p>
+            Con una base sólida en desarrollo web gracias a mi enfoque autodidacta y certificaciones, me siento preparado para enfrentar cualquier desafío como Frontend Developer. Además, estoy a punto de finalizar mi carrera de APX, lo cual amplía mis conocimientos y habilidades hacia el desarrollo fullstack.</p>
           </div>
           {/* Personal Skills */}
           <h2 className="text-xl font-medium text-white uppercase underline underline-offset-8 decoration-green-500">
