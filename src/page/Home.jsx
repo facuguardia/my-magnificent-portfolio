@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Buttons from "../components/Buttons";
 import SocialMedia from "../components/SocialMedia";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -59,6 +60,7 @@ function Home() {
           <SocialMedia />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

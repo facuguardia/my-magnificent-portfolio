@@ -25,11 +25,11 @@ function Projects() {
             imageUrl: image?.fields?.file?.url || null,
           };
         });
-
         setData(projectsWithImages);
       });
   }, []);
 
+  // Animations
   const imgProduct1 = {
     hidden: {
       opacity: 0,
