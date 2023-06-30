@@ -1,4 +1,3 @@
-// Icons
 import {
   SiHtml5,
   SiCss3,
@@ -23,23 +22,10 @@ import { FaRunning, FaPlaneDeparture, FaMinus } from "react-icons/fa";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { TbBrandReactNative } from "react-icons/tb";
 
-// Framer Motion
-import { motion } from "framer-motion";
-
 function Resume() {
   return (
     <div className="w-auto h-screen p-4">
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ delay: 0.3, duration: 0.5 }}
-        variants={{
-          hidden: { opacity: 0, y: 50 },
-          visible: { opacity: 1, y: 0 },
-        }}
-        className="grid grid-cols-1 lg:grid-cols-3"
-      >
+      <div className="grid grid-cols-1 lg:grid-cols-3">
         {/* Column 1 */}
         <div className="col-span-1 mb-5">
           {/* Software Skills */}
@@ -249,7 +235,7 @@ function Resume() {
             </div>
           </div>
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 }
