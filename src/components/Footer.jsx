@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div className='absolute bottom-5 right-7'>
+    <div className='absolute bottom-2 right-2 '>
       &copy;2023 - Facu Guardia
     </div>
   )
