@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 
 function Home() {
   return (
-    <div className="w-auto h-screen bg-hero bg-cover bg-center flex flex-col justify-center md:justify-between">
+    <div className="w-auto h-screen bg-hero bg-cover bg-center flex flex-col justify-center md:justify-between overflow-hidden">
       <div className="w-auto h-screen flex justify-center items-center text-center">
         <div>
           <div>
