@@ -29,19 +29,19 @@ import { motion } from "framer-motion";
 function Resume() {
   return (
     <div className="w-auto h-screen p-4">
-      <div className="grid grid-cols-1 lg:grid-cols-3">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ delay: 0.3, duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, y: 50 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        className="grid grid-cols-1 lg:grid-cols-3"
+      >
         {/* Column 1 */}
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ delay: 0.6, duration: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, x: 50 },
-            visible: { opacity: 1, x: 0 },
-          }}
-          className="col-span-1 mb-5"
-        >
+        <div className="col-span-1 mb-5">
           {/* Software Skills */}
           <h2 className="text-xl font-medium text-white uppercase underline underline-offset-8 decoration-green-500">
             Software Skills
@@ -134,19 +134,9 @@ function Resume() {
               Inglés (B1)
             </span>
           </div>
-        </motion.div>
+        </div>
         {/* Column 2 */}
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ delay: 0.4, duration: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, x: 50 },
-            visible: { opacity: 1, x: 0 },
-          }}
-          className="col-span-1"
-        >
+        <div className="col-span-1">
           {/* Experience */}
           <h2 className="text-xl font-medium text-white uppercase underline underline-offset-8 decoration-green-500">
             Experiencia
@@ -205,26 +195,21 @@ function Resume() {
               </li>
             </ol>
           </div>
-        </motion.div>
+        </div>
         {/* Column 3 */}
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, x: 50 },
-            visible: { opacity: 1, x: 0 },
-          }}
-          className="col-span-1"
-        >
+        <div className="col-span-1">
           {/* Education */}
           <h2 className="text-xl font-medium text-white uppercase underline underline-offset-8 decoration-green-500">
             Educación
           </h2>
           <div className="grid grid-cols-1 pt-5 mb-5">
             <p className="flex items-center gap-2">
-            Con una base sólida en desarrollo web gracias a mi enfoque autodidacta y certificaciones, me siento preparado para enfrentar cualquier desafío como Frontend Developer. Además, estoy a punto de finalizar mi carrera de APX, lo cual amplía mis conocimientos y habilidades hacia el desarrollo fullstack.</p>
+              Con una base sólida en desarrollo web gracias a mi enfoque
+              autodidacta y certificaciones, me siento preparado para enfrentar
+              cualquier desafío como Frontend Developer. Además, estoy a punto
+              de finalizar mi carrera de APX, lo cual amplía mis conocimientos y
+              habilidades hacia el desarrollo fullstack.
+            </p>
           </div>
           {/* Personal Skills */}
           <h2 className="text-xl font-medium text-white uppercase underline underline-offset-8 decoration-green-500">
@@ -263,8 +248,8 @@ function Resume() {
               Aprender
             </div>
           </div>
-        </motion.div>
-      </div>
+        </div>
+      </motion.div>
     </div>
   );
 }
