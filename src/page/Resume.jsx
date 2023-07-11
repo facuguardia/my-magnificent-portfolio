@@ -17,6 +17,10 @@ import {
   SiWoocommerce,
   SiWordpress,
   SiPlatzi,
+  SiTypescript,
+  SiNodedotjs,
+  SiContentful,
+  SiFirebase
 } from "react-icons/si";
 import { FaRunning, FaPlaneDeparture, FaMinus } from "react-icons/fa";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
@@ -43,7 +47,7 @@ function Resume() {
             </span>
             <span className="flex items-center gap-2 pb-2">
               <SiTailwindcss />
-              Tailwind
+              Tailwind CSS
             </span>
             <span className="flex items-center gap-2 pb-2">
               <SiFramer />
@@ -65,6 +69,10 @@ function Resume() {
               <SiJavascript />
               JavaScript
             </span>
+             <span className="flex items-center gap-2 pb-2">
+              <SiTypescript />
+              TypeScript
+            </span>
             <span className="flex items-center gap-2 pb-2">
               <SiReact />
               ReactJS
@@ -73,6 +81,10 @@ function Resume() {
               <SiNextdotjs />
               NextJS
             </span>
+             <span className="flex items-center gap-2 pb-2">
+              <SiNodedotjs />
+              NodeJS
+            </span>
             <span className="flex items-center gap-2 pb-2">
               <TbBrandReactNative />
               React Native
@@ -80,6 +92,14 @@ function Resume() {
             <span className="flex items-center gap-2 pb-2">
               <SiExpo />
               Expo
+            </span>
+             <span className="flex items-center gap-2 pb-2">
+              <SiContentful />
+              Contentful
+            </span>
+             <span className="flex items-center gap-2 pb-2">
+              <SiFirebase />
+              Firebase
             </span>
             <span className="flex items-center gap-2 pb-2">
               <SiWordpress />
@@ -104,20 +124,6 @@ function Resume() {
             <span className="flex items-center gap-2 pb-2">
               <SiTrello />
               Trello
-            </span>
-          </div>
-          {/* Idiomas */}
-          <h2 className="text-xl font-medium text-white uppercase underline underline-offset-8 decoration-green-500 pt-5">
-            Idiomas
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 text-lg pt-5">
-            <span className="flex items-center gap-2 pb-2">
-              <FaMinus className="text-green-500" />
-              Español (Nativo)
-            </span>
-            <span className="flex items-center gap-2 pb-2">
-              <FaMinus className="text-green-500" />
-              Inglés (B1)
             </span>
           </div>
         </div>
