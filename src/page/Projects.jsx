@@ -5,8 +5,7 @@ import Spinner from "../components/Spinner";
 function Projects() {
   const [data, setData] = useState([]);
 
-  const urlApi =
-    "https://cdn.contentful.com/spaces/k9322v1n7zv0/environments/master/entries?access_token=CMlQ1Mt4cucV4Zw_zvk-hYwgvlIaAFl5zyowxaDbwkg&content_type=projects";
+  const urlApi = import.meta.env.VITE_API_URL;
 
   useEffect(() => {
     fetch(urlApi)
