@@ -13,7 +13,7 @@ function Buttons() {
           hidden: { opacity: 0, x: 50 },
           visible: { opacity: 1, x: 0 },
         }}
-        className="bg-black hover:bg-[#09e507] border py-2 px-6 rounded-full text-[#09e507] font-medium hover:font-semibold hover:text-black shadow-gray-400 shadow-md transition-all duration-500 animate-pulse"
+        className="bg-black hover:bg-[#09e507] border py-2 px-6 rounded-full text-[#09e507] font-medium hover:font-semibold hover:text-black shadow-gray-400 shadow-md transition-all duration-300"
       >
         <Link
           to="mailto:facuguar12@gmail.com?subject=Contacto%20desde%20webside..."
@@ -33,11 +33,7 @@ function Buttons() {
         }}
         className="bg-black hover:bg-[#09e507] border py-2 px-6 rounded-full text-[#09e507] font-medium hover:font-semibold hover:text-black shadow-gray-400 shadow-md transition-all duration-500"
       >
-        <Link
-          to="/projects"
-        >
-          Proyectos
-        </Link>
+        <Link to="/projects">Proyectos</Link>
       </motion.div>
     </div>
   );

@@ -40,7 +40,7 @@ function Card({ data }) {
               <img
                 src={imageUrl}
                 alt="imagen descriptiva de la aplicación"
-                className="absolute inset-0 w-full h-full object-cover object-center rounded-lg shadow-md"
+                className="absolute inset-0 w-full h-full object-cover rounded-lg shadow-md"
               />
               <div className="px-8 py-10 relative z-10 w-full border-4 border-green-500 bg-gray-900 opacity-0 hover:opacity-100 cursor-pointer">
                 <h1 className="tracking-widest text-lg title-font font-medium text-green-400 mb-1">
