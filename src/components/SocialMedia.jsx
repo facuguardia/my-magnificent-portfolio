@@ -21,7 +21,7 @@ function SocialMedia() {
       <Link to="https://www.linkedin.com/in/facu-guardia/" target="_blank">
         <BsLinkedin className="hover:text-[#09e507] transform hover:scale-125 transition-all duration-300" />
       </Link>
-      <Link to="https://bit.ly/3yxOSR4" target="_blank">
+      <Link to="https://bit.ly/wsp-dev" target="_blank">
         <BsWhatsapp className="text-md text-center hover:text-[#09e507] transform hover:scale-125 transition-all duration-300" />
       </Link>
     </motion.div>
